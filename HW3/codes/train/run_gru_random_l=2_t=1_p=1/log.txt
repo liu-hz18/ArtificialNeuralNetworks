@@ -1,0 +1,1702 @@
+Created model with fresh parameters.
+wordvec cannot cover 0.076715 vocab
+train set restart, 468 batches and 24 left
+Epoch 1 Batch 99, train loss 5.174353
+Epoch 1 Batch 199, train loss 4.464433
+Epoch 1 Batch 299, train loss 4.045389
+Epoch 1 Batch 399, train loss 3.769040
+dev set restart, 156 batches and 8 left
+Epoch 1 of 100 took 44.08299207687378s
+  training loss:                 4.263149394155311
+  validation loss:               3.7069414121956465
+  validation perplexity:         40.729042470759346
+  best epoch:                    1
+  best validation perplexity:    40.729042470759346
+Example 0: A desert with a man toilet with a cop on the reflected .
+Example 1: A young wooden is hydrant on a house .
+Example 2: A person sitting on front of a tan airplane seen on a trail .
+Example 3: A rows of oranges , sitting with airplane on the background .
+Example 4: A shower with two coffee on a sink .
+train set restart, 468 batches and 24 left
+Epoch 2 Batch 99, train loss 3.480617
+Epoch 2 Batch 199, train loss 3.348645
+Epoch 2 Batch 299, train loss 3.232902
+Epoch 2 Batch 399, train loss 3.161244
+dev set restart, 156 batches and 8 left
+Epoch 2 of 100 took 47.41757297515869s
+  training loss:                 3.275355720825033
+  validation loss:               3.274169995164354
+  validation perplexity:         26.421286581499498
+  best epoch:                    2
+  best validation perplexity:    26.421286581499498
+Example 0: A man goes on a motorcycle down grazing in front of the bus .
+Example 1: A porcelain sink and a blue drinking in the bathroom .
+Example 2: A bedroom with a toilet , and white stove in the backseat .
+Example 3: A cat sits in a park with a wooden bench .
+Example 4: A toilet with sticking by two books and flowers in it .
+train set restart, 468 batches and 24 left
+Epoch 3 Batch 99, train loss 2.985598
+Epoch 3 Batch 199, train loss 2.995023
+Epoch 3 Batch 299, train loss 2.970580
+Epoch 3 Batch 399, train loss 2.940982
+dev set restart, 156 batches and 8 left
+Epoch 3 of 100 took 45.8755407333374s
+  training loss:                 2.9666443953890282
+  validation loss:               3.1212478940906174
+  validation perplexity:         22.674657566763237
+  best epoch:                    3
+  best validation perplexity:    22.674657566763237
+Example 0: A dog leans up to camera on a brick field .
+Example 1: A green motorcycle is laying on the side of the road .
+Example 2: A man sitting at the railing in a bathroom looking holds .
+Example 3: A bus on a road with a truck on horses in the distance .
+Example 4: A person sitting on a bench outside a car .
+train set restart, 468 batches and 24 left
+Epoch 4 Batch 99, train loss 2.813561
+Epoch 4 Batch 199, train loss 2.807448
+Epoch 4 Batch 299, train loss 2.828678
+Epoch 4 Batch 399, train loss 2.831315
+dev set restart, 156 batches and 8 left
+Epoch 4 of 100 took 47.68852376937866s
+  training loss:                 2.819488225461069
+  validation loss:               3.036672182301227
+  validation perplexity:         20.83579002456534
+  best epoch:                    4
+  best validation perplexity:    20.83579002456534
+Example 0: A busy city with vehicles buses riders and herd on beneath .
+Example 1: A close - up of a clock with stairs equipment and a swing over it .
+Example 2: A log sitting on the side of two motorcycles in a parking lot .
+Example 3: A living room with a stone vanity and a plunger in it .
+Example 4: A large passenger jet is in the water sky the mountains posts under the ground .
+train set restart, 468 batches and 24 left
+Epoch 5 Batch 99, train loss 2.721680
+Epoch 5 Batch 199, train loss 2.719174
+Epoch 5 Batch 299, train loss 2.729177
+Epoch 5 Batch 399, train loss 2.742315
+dev set restart, 156 batches and 8 left
+Epoch 5 of 100 took 46.282581090927124s
+  training loss:                 2.727703201745365
+  validation loss:               2.999724111666396
+  validation perplexity:         20.079996322205123
+  best epoch:                    5
+  best validation perplexity:    20.079996322205123
+Example 0: The view of a Coca at petting a urinal and itself by it .
+Example 1: An reflective stands and benches are in the curb .
+Example 2: A bathroom with a toilet , sink , blue colored and white ceramic floor .
+Example 3: A crowded scene of a city street filled with heavy buildings .
+Example 4: A lady standing in a animal eating near the water with an head crossed .
+train set restart, 468 batches and 24 left
+Epoch 6 Batch 99, train loss 2.618765
+Epoch 6 Batch 199, train loss 2.655550
+Epoch 6 Batch 299, train loss 2.662889
+Epoch 6 Batch 399, train loss 2.687612
+dev set restart, 156 batches and 8 left
+Epoch 6 of 100 took 47.46309280395508s
+  training loss:                 2.6621598775452897
+  validation loss:               2.9775915176933454
+  validation perplexity:         19.64045594331667
+  best epoch:                    6
+  best validation perplexity:    19.64045594331667
+Example 0: The woman in leather jackets on her motorcycle through the road .
+Example 1: A bike is close to a green fire hydrant on a sidewalks street .
+Example 2: A man is sitting on a wooden bench next to a fence full in the distance .
+Example 3: A green double decker bus parked near a building of a building .
+Example 4: A long street corner shows of a large modern hallway .
+train set restart, 468 batches and 24 left
+Epoch 7 Batch 99, train loss 2.579791
+Epoch 7 Batch 199, train loss 2.588826
+Epoch 7 Batch 299, train loss 2.630363
+Epoch 7 Batch 399, train loss 2.613453
+dev set restart, 156 batches and 8 left
+Epoch 7 of 100 took 46.52943277359009s
+  training loss:                 2.611197611924682
+  validation loss:               2.9485420994164184
+  validation perplexity:         19.07811944188262
+  best epoch:                    7
+  best validation perplexity:    19.07811944188262
+Example 0: A man standing behind a motorcycle in front of a white building .
+Example 1: The car are pulling a photo of three mopeds about a bus .
+Example 2: A old style white airplane sitting in green grass and people other people are walking by .
+Example 3: A photo taken herself in front of a fence next to a stone wall .
+Example 4: A horse rider is as a stoplight in front of building .
+train set restart, 468 batches and 24 left
+Epoch 8 Batch 99, train loss 2.531482
+Epoch 8 Batch 199, train loss 2.544814
+Epoch 8 Batch 299, train loss 2.572006
+Epoch 8 Batch 399, train loss 2.592994
+dev set restart, 156 batches and 8 left
+Epoch 8 of 100 took 44.52840232849121s
+  training loss:                 2.568441566882103
+  validation loss:               2.9374710462096316
+  validation perplexity:         18.86806944922856
+  best epoch:                    8
+  best validation perplexity:    18.86806944922856
+Example 0: People standing next to each other near a window .
+Example 1: Adult jet rests on the tarmac of the airport with up taken in the sky .
+Example 2: A wedding painted dishes in some pot with mouth out on it .
+Example 3: A big station with white stairs leading to a building .
+Example 4: Two children shaving contents on retro on the paper watching .
+train set restart, 468 batches and 24 left
+Epoch 9 Batch 99, train loss 2.503313
+Epoch 9 Batch 199, train loss 2.532917
+Epoch 9 Batch 299, train loss 2.536217
+Epoch 9 Batch 399, train loss 2.566651
+dev set restart, 156 batches and 8 left
+Epoch 9 of 100 took 45.56553649902344s
+  training loss:                 2.537167098730612
+  validation loss:               2.9293701069378884
+  validation perplexity:         18.715837806610008
+  best epoch:                    9
+  best validation perplexity:    18.715837806610008
+Example 0: A large building with a clock to be outside at the oven .
+Example 1: A Toilet of poles sitting on a table from a brick table .
+Example 2: A man is sitting on a bike in someones inner car .
+Example 3: A blue fire hydrant sitting next to each other in front of a metal steel wall .
+Example 4: A boy and a woman are sitting on an airport bench .
+train set restart, 468 batches and 24 left
+Epoch 10 Batch 99, train loss 2.435658
+Epoch 10 Batch 199, train loss 2.511145
+Epoch 10 Batch 299, train loss 2.526646
+Epoch 10 Batch 399, train loss 2.542796
+dev set restart, 156 batches and 8 left
+Epoch 10 of 100 took 46.219308376312256s
+  training loss:                 2.50701422376165
+  validation loss:               2.9309962691796487
+  validation perplexity:         18.746297554907994
+  best epoch:                    9
+  best validation perplexity:    18.715837806610008
+Example 0: A man is riding a scooter with a woman on the back of a motorcycle .
+Example 1: A parking lot within motorcycles , trucks and bicycles in formation .
+Example 2: A white and red airplane with is on the ground near it .
+Example 3: Green jet flying over a hills , fixing to the forest .
+Example 4: Man in black suit sitting waiting at a crosswalk has a multicolored and setting center .
+train set restart, 468 batches and 24 left
+Epoch 11 Batch 99, train loss 2.422026
+Epoch 11 Batch 199, train loss 2.469980
+Epoch 11 Batch 299, train loss 2.498826
+Epoch 11 Batch 399, train loss 2.504914
+dev set restart, 156 batches and 8 left
+Epoch 11 of 100 took 46.03489351272583s
+  training loss:                 2.4799204619962776
+  validation loss:               2.9163114797648912
+  validation perplexity:         18.473023519624117
+  best epoch:                    11
+  best validation perplexity:    18.473023519624117
+Example 0: both blurry of a city street on a busy street .
+Example 1: A city bus is parked with the person ' s stop sign .
+Example 2: A bowl that is sections table in a chocolate with green fruit .
+Example 3: A street from the cars and two cars are parked by a lot .
+Example 4: A restaurant filled with lots of different of clutter and shelves .
+train set restart, 468 batches and 24 left
+Epoch 12 Batch 99, train loss 2.401032
+Epoch 12 Batch 199, train loss 2.437181
+Epoch 12 Batch 299, train loss 2.485604
+Epoch 12 Batch 399, train loss 2.474417
+dev set restart, 156 batches and 8 left
+Epoch 12 of 100 took 47.54358220100403s
+  training loss:                 2.4578509030819955
+  validation loss:               2.914944496551474
+  validation perplexity:         18.447788458453843
+  best epoch:                    12
+  best validation perplexity:    18.447788458453843
+Example 0: A white bowl filled with lots of vegetables and cakes .
+Example 1: A baby is taking a TV peeks from the camera .
+Example 2: A man on a motorcycle on the dirt riding through a bridge .
+Example 3: Man on a bike with lots of motorcycles on the partition .
+Example 4: A black and white cat on a kitchen preparing water with some men spilled dish .
+train set restart, 468 batches and 24 left
+Epoch 13 Batch 99, train loss 2.392754
+Epoch 13 Batch 199, train loss 2.419026
+Epoch 13 Batch 299, train loss 2.465188
+Epoch 13 Batch 399, train loss 2.450952
+dev set restart, 156 batches and 8 left
+Epoch 13 of 100 took 49.55584907531738s
+  training loss:                 2.4366386978865178
+  validation loss:               2.9108767578186248
+  validation perplexity:         18.372900091223652
+  best epoch:                    13
+  best validation perplexity:    18.372900091223652
+Example 0: A herd of goats grazing on a dirt road on a sunny day .
+Example 1: A parking lot filled with lots of trees on top of a corner with several red lights behind it .
+Example 2: Two laptops are on a desk and a laptop computer .
+Example 3: A very nice looking rest room or dirty room with tub and glass .
+Example 4: A jet jet liner on the runway with barrels its wing speeding down .
+train set restart, 468 batches and 24 left
+Epoch 14 Batch 99, train loss 2.365311
+Epoch 14 Batch 199, train loss 2.404496
+Epoch 14 Batch 299, train loss 2.420814
+Epoch 14 Batch 399, train loss 2.462102
+dev set restart, 156 batches and 8 left
+Epoch 14 of 100 took 44.422691106796265s
+  training loss:                 2.4195722638925257
+  validation loss:               2.9080612034757958
+  validation perplexity:         18.32124294845311
+  best epoch:                    14
+  best validation perplexity:    18.32124294845311
+Example 0: bowling motorcycle following cars on camouflage with multiple bulls sitting on a chatting road beside the shoulders of the toilet .
+Example 1: A group of people on motorcycles are driving down the road .
+Example 2: A bathroom with a sink , shower of a shower curtain and sink in a bathroom .
+Example 3: A giraffe that is standing in the grass that has grows directly .
+Example 4: A pair of buses at a street in a city .
+train set restart, 468 batches and 24 left
+Epoch 15 Batch 99, train loss 2.352464
+Epoch 15 Batch 199, train loss 2.389182
+Epoch 15 Batch 299, train loss 2.394206
+Epoch 15 Batch 399, train loss 2.432651
+dev set restart, 156 batches and 8 left
+Epoch 15 of 100 took 48.03842234611511s
+  training loss:                 2.4008548793508044
+  validation loss:               2.9056844858291098
+  validation perplexity:         18.27775023245453
+  best epoch:                    15
+  best validation perplexity:    18.27775023245453
+Example 0: A group of looking are parked outside a building bus .
+Example 1: A little toddler sitting in the middle of a park bench .
+Example 2: A group of people in parking with benches next to a traffic light .
+Example 3: The toilet is being used as a walk up beside it .
+Example 4: A clock with a lot of apples and a spoon .
+train set restart, 468 batches and 24 left
+Epoch 16 Batch 99, train loss 2.338085
+Epoch 16 Batch 199, train loss 2.384973
+Epoch 16 Batch 299, train loss 2.380669
+Epoch 16 Batch 399, train loss 2.406828
+dev set restart, 156 batches and 8 left
+Epoch 16 of 100 took 48.16760754585266s
+  training loss:                 2.3872471938509423
+  validation loss:               2.9039794981759757
+  validation perplexity:         18.246613445442676
+  best epoch:                    16
+  best validation perplexity:    18.246613445442676
+Example 0: A group of three ice and white air plane are parked in an alley .
+Example 1: A parked motorcycle parked in a parking lot near a big row of cows .
+Example 2: A kitchen with a long red stove next to a white wall .
+Example 3: A photo of a fire hydrant in a city street .
+Example 4: A red fire hydrant in the middle of the grass next to a sidewalk .
+train set restart, 468 batches and 24 left
+Epoch 17 Batch 99, train loss 2.316242
+Epoch 17 Batch 199, train loss 2.346341
+Epoch 17 Batch 299, train loss 2.403190
+Epoch 17 Batch 399, train loss 2.411954
+dev set restart, 156 batches and 8 left
+Epoch 17 of 100 took 47.495227336883545s
+  training loss:                 2.374318850828386
+  validation loss:               2.903425795606213
+  validation perplexity:         18.23651304525529
+  best epoch:                    17
+  best validation perplexity:    18.23651304525529
+Example 0: A person walking across a dirt field next to a bus .
+Example 1: A view of some electronics that is seen on a park bench .
+Example 2: A double decker bus is driving down a city street .
+Example 3: A cop riding and wearing with air gear talks on a bus .
+Example 4: A cup is shown at the beer and a lap .
+train set restart, 468 batches and 24 left
+Epoch 18 Batch 99, train loss 2.294894
+Epoch 18 Batch 199, train loss 2.337771
+Epoch 18 Batch 299, train loss 2.372455
+Epoch 18 Batch 399, train loss 2.399674
+dev set restart, 156 batches and 8 left
+Epoch 18 of 100 took 47.615797996520996s
+  training loss:                 2.3599815246647102
+  validation loss:               2.9057230743496913
+  validation perplexity:         18.278455557404197
+  best epoch:                    17
+  best validation perplexity:    18.23651304525529
+Example 0: Pots carries the entrance of a small plane ' s passenger .
+Example 1: A child is sitting on a desk next to a laptop .
+Example 2: A yellow fire hydrant on the side of a road .
+Example 3: An airplane is flying in front of a red field .
+Example 4: The brightly umbrella toy sitting on the shelf beside a desk .
+train set restart, 468 batches and 24 left
+Epoch 19 Batch 99, train loss 2.277144
+Epoch 19 Batch 199, train loss 2.355526
+Epoch 19 Batch 299, train loss 2.352878
+Epoch 19 Batch 399, train loss 2.377394
+dev set restart, 156 batches and 8 left
+Epoch 19 of 100 took 45.70535898208618s
+  training loss:                 2.347240730135171
+  validation loss:               2.8984007600194746
+  validation perplexity:         18.145103777983103
+  best epoch:                    19
+  best validation perplexity:    18.145103777983103
+Example 0: A small plane sits on a runway and in the day .
+Example 1: A knocked - with female and young woman circular on a shelf .
+Example 2: A young woman sits on a wood bench by two trash .
+Example 3: A slice of busses in a red flowered with Looking on them .
+Example 4: A toilet that has alone in the bathroom and trying to grab .
+train set restart, 468 batches and 24 left
+Epoch 20 Batch 99, train loss 2.284296
+Epoch 20 Batch 199, train loss 2.315758
+Epoch 20 Batch 299, train loss 2.332116
+Epoch 20 Batch 399, train loss 2.385955
+dev set restart, 156 batches and 8 left
+Epoch 20 of 100 took 47.58049201965332s
+  training loss:                 2.3362209898576554
+  validation loss:               2.9095763621656587
+  validation perplexity:         18.349023579633243
+  best epoch:                    19
+  best validation perplexity:    18.145103777983103
+Example 0: a street scene with bottles from both sheep on the road .
+Example 1: Two fighter jets flying low over a busy city while the pole that have been reflected to it .
+Example 2: A white toilet inside of a bathroom with several blue colors .
+Example 3: A woman getting ready to the under under the window in front of a wall .
+Example 4: Two giraffes standing in a fenced black area next to trees .
+train set restart, 468 batches and 24 left
+Epoch 21 Batch 99, train loss 2.266712
+Epoch 21 Batch 199, train loss 2.317524
+Epoch 21 Batch 299, train loss 2.330393
+Epoch 21 Batch 399, train loss 2.356203
+dev set restart, 156 batches and 8 left
+Epoch 21 of 100 took 45.902223110198975s
+  training loss:                 2.3265853019665554
+  validation loss:               2.9005152588324368
+  validation perplexity:         18.183512171323123
+  best epoch:                    19
+  best validation perplexity:    18.145103777983103
+Example 0: An open buses bus waiting to cross passengers at a station .
+Example 1: A beautiful giraffe standing in front of a built stoves .
+Example 2: A bunch of gray busses are parked together near each other .
+Example 3: A bathroom with a good a toilet , sink , and shower .
+Example 4: A street with fall , beverages paint , snow and buses all a sign mirror mounted pole and dual motorcycle .
+train set restart, 468 batches and 24 left
+Epoch 22 Batch 99, train loss 2.238503
+Epoch 22 Batch 199, train loss 2.299660
+Epoch 22 Batch 299, train loss 2.334123
+Epoch 22 Batch 399, train loss 2.351140
+dev set restart, 156 batches and 8 left
+Epoch 22 of 100 took 46.41472601890564s
+  training loss:                 2.3149425696208277
+  validation loss:               2.917318825796188
+  validation perplexity:         18.491641622414257
+  best epoch:                    19
+  best validation perplexity:    18.145103777983103
+Example 0: A close up of a fire hydrant on the side of the road .
+Example 1: things the kitchen counter with a long countertop with a wooden table .
+Example 2: An empty bed with a computer wears on it next to a television .
+Example 3: A red and black bus sits next to a red car .
+Example 4: A long red and white plane Line traveling down a city .
+train set restart, 468 batches and 24 left
+Epoch 23 Batch 99, train loss 2.241480
+Epoch 23 Batch 199, train loss 2.286746
+Epoch 23 Batch 299, train loss 2.307179
+Epoch 23 Batch 399, train loss 2.349905
+dev set restart, 156 batches and 8 left
+Epoch 23 of 100 took 44.62841558456421s
+  training loss:                 2.3065076885955422
+  validation loss:               2.9063450730890614
+  validation perplexity:         18.289828270258404
+  best epoch:                    19
+  best validation perplexity:    18.145103777983103
+Example 0: A large jetliner resting on top of an orange tarmac .
+Example 1: An Cola of Elephants are teenage over a green bench .
+Example 2: A tall giraffe standing next to a tree on a lush green field .
+Example 3: Sheep standing in the woods with a tall tree sitting on the ground facing .
+Example 4: An old train going through stairs of boulders on the street .
+train set restart, 468 batches and 24 left
+Epoch 24 Batch 99, train loss 2.224454
+Epoch 24 Batch 199, train loss 2.272573
+Epoch 24 Batch 299, train loss 2.292049
+Epoch 24 Batch 399, train loss 2.346046
+dev set restart, 156 batches and 8 left
+Epoch 24 of 100 took 45.55287265777588s
+  training loss:                 2.2971777504186894
+  validation loss:               2.896867560882614
+  validation perplexity:         18.11730503648123
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A skeleton peeking which holding a skateboard next to it .
+Example 1: A crowd of cars that are parked near trees .
+Example 2: A traffic light above a corner with a steeple in the background .
+Example 3: A cat sitting on top of a toilet with open head up .
+Example 4: A slice of bottles sitting in a bowl on top of a table .
+train set restart, 468 batches and 24 left
+Epoch 25 Batch 99, train loss 2.229477
+Epoch 25 Batch 199, train loss 2.272105
+Epoch 25 Batch 299, train loss 2.306386
+Epoch 25 Batch 399, train loss 2.311952
+dev set restart, 156 batches and 8 left
+Epoch 25 of 100 took 44.573044538497925s
+  training loss:                 2.2871348067387336
+  validation loss:               2.9134867399228965
+  validation perplexity:         18.420915664301685
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A man sits on a steps near his horses .
+Example 1: A man sitting on a bench holding a guitar .
+Example 2: A small airplane flying over several rocks , sitting next to a building .
+Example 3: A kitchen with a wooden block , a counter , a refrigerator , oven and other items .
+Example 4: A city street scene streetlight with a black pole stands and one fire hydrant .
+train set restart, 468 batches and 24 left
+Epoch 26 Batch 99, train loss 2.220497
+Epoch 26 Batch 199, train loss 2.244469
+Epoch 26 Batch 299, train loss 2.290546
+Epoch 26 Batch 399, train loss 2.344617
+dev set restart, 156 batches and 8 left
+Epoch 26 of 100 took 46.03321552276611s
+  training loss:                 2.279500056939847
+  validation loss:               2.9058563363007703
+  validation perplexity:         18.280891542362937
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A firetruck is shown beside a tree in front of a yard .
+Example 1: A man in a helmet at a red plane as a cat watches .
+Example 2: Two people walking along past side of motorcycles on parking lot .
+Example 3: A motorcycle parked in front of a building in a city .
+Example 4: Two people and some vehicles in their own motorcyclists stacked in the forest .
+train set restart, 468 batches and 24 left
+Epoch 27 Batch 99, train loss 2.233069
+Epoch 27 Batch 199, train loss 2.237899
+Epoch 27 Batch 299, train loss 2.268797
+Epoch 27 Batch 399, train loss 2.312232
+dev set restart, 156 batches and 8 left
+Epoch 27 of 100 took 46.96227765083313s
+  training loss:                 2.274931421157902
+  validation loss:               2.9152209847134882
+  validation perplexity:         18.452889758770027
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: The front of a commercial airplane in the sky .
+Example 1: An empty fire hydrant on the edge of a hill .
+Example 2: a lot of scooters that are parked in the street .
+Example 3: A person crossing a dark brown motorbike in front of a fence , and a girl holding a child walking .
+Example 4: The back view of a clock tower in the background .
+train set restart, 468 batches and 24 left
+Epoch 28 Batch 99, train loss 2.192974
+Epoch 28 Batch 199, train loss 2.239018
+Epoch 28 Batch 299, train loss 2.281321
+Epoch 28 Batch 399, train loss 2.309687
+dev set restart, 156 batches and 8 left
+Epoch 28 of 100 took 45.79993724822998s
+  training loss:                 2.268387231745445
+  validation loss:               2.9000112606940425
+  validation perplexity:         18.174350024085825
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A group of cars that have been parked in a lot .
+Example 1: An jumping parked in a parking lot has stickers on the street .
+Example 2: A dog sitting in the back of a car .
+Example 3: View of a large child laying in between a toilet .
+Example 4: Traffic moving along a road with tall sky is shown .
+train set restart, 468 batches and 24 left
+Epoch 29 Batch 99, train loss 2.194536
+Epoch 29 Batch 199, train loss 2.235522
+Epoch 29 Batch 299, train loss 2.273471
+Epoch 29 Batch 399, train loss 2.301354
+dev set restart, 156 batches and 8 left
+Epoch 29 of 100 took 45.17514491081238s
+  training loss:                 2.260060108038408
+  validation loss:               2.9167294403154203
+  validation perplexity:         18.480746128464816
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: Four giraffes standing in an open area by the water .
+Example 1: Two giraffes muffin , hay , there leaving , and peaches .
+Example 2: A cycles at a stop light is on a pole .
+Example 3: Two wooden friends are standing in front of a three wheeled computers .
+Example 4: A gray kitchen with wooden cabinets and a black refrigerator .
+train set restart, 468 batches and 24 left
+Epoch 30 Batch 99, train loss 2.197217
+Epoch 30 Batch 199, train loss 2.235914
+Epoch 30 Batch 299, train loss 2.259389
+Epoch 30 Batch 399, train loss 2.272972
+dev set restart, 156 batches and 8 left
+Epoch 30 of 100 took 49.534987926483154s
+  training loss:                 2.252199387753696
+  validation loss:               2.9105878189532426
+  validation perplexity:         18.367592213180572
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A man that is sitting on the ground in front of the ocean .
+Example 1: A model engine airplane that is sitting with luggage on top of it .
+Example 2: least bicycle riders passing an intersection with a car on the street .
+Example 3: The dog is captured by the bench in front of a car .
+Example 4: A bathroom contains a toilet with tub and a sink floor with painted wood walls and a window in it .
+train set restart, 468 batches and 24 left
+Epoch 31 Batch 99, train loss 2.188020
+Epoch 31 Batch 199, train loss 2.213157
+Epoch 31 Batch 299, train loss 2.266235
+Epoch 31 Batch 399, train loss 2.277036
+dev set restart, 156 batches and 8 left
+Epoch 31 of 100 took 46.9758505821228s
+  training loss:                 2.247040738937443
+  validation loss:               2.912211040262137
+  validation perplexity:         18.397431091253708
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: Wooden bench and chair with writing pieces on them eyes .
+Example 1: A bathroom with a toilet , sink , plug , small bathtub and drawers .
+Example 2: A white and black jet flying on a rural runway .
+Example 3: A small bathroom with a toilet , shower , sink and part shower .
+Example 4: A man driving a road with a dog on a leash next to gym .
+train set restart, 468 batches and 24 left
+Epoch 32 Batch 99, train loss 2.170697
+Epoch 32 Batch 199, train loss 2.232397
+Epoch 32 Batch 299, train loss 2.244810
+Epoch 32 Batch 399, train loss 2.265921
+dev set restart, 156 batches and 8 left
+Epoch 32 of 100 took 47.417810678482056s
+  training loss:                 2.2402521463345364
+  validation loss:               2.910610610988832
+  validation perplexity:         18.368010852766794
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: Several benches on a field with poles in the background .
+Example 1: An airplane on a runway is flying the water clouds .
+Example 2: A collection of three teapot that placed in a living room with a television on top of it .
+Example 3: The colored plane is flying near the partly of houses .
+Example 4: A man holding a skateboard pants and two giraffe standing on a field under underneath .
+train set restart, 468 batches and 24 left
+Epoch 33 Batch 99, train loss 2.174128
+Epoch 33 Batch 199, train loss 2.207053
+Epoch 33 Batch 299, train loss 2.247240
+Epoch 33 Batch 399, train loss 2.265644
+dev set restart, 156 batches and 8 left
+Epoch 33 of 100 took 46.10370445251465s
+  training loss:                 2.2351789761707983
+  validation loss:               2.9163606372233697
+  validation perplexity:         18.473931628830744
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A bunch of people are gathered around a small plane .
+Example 1: A man on a city travel past a fingers light .
+Example 2: A kitchen with a black refrigerator under the seat .
+Example 3: The sun and village in walked are playground like outside at a restaurant similar not .
+Example 4: A sheep standing next to a wooden wire mountain on a field .
+train set restart, 468 batches and 24 left
+Epoch 34 Batch 99, train loss 2.164007
+Epoch 34 Batch 199, train loss 2.206028
+Epoch 34 Batch 299, train loss 2.228431
+Epoch 34 Batch 399, train loss 2.274900
+dev set restart, 156 batches and 8 left
+Epoch 34 of 100 took 45.54779505729675s
+  training loss:                 2.228737981334678
+  validation loss:               2.911771863179174
+  validation perplexity:         18.389353135089486
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A man holding an American while hot , while on a phone .
+Example 1: A shower scene with a sink and a small toilet .
+Example 2: A bedroom with two green one books a white and red striped sheet them human .
+Example 3: An attractive young woman riding on the back of a motorcycle .
+Example 4: An Air Force aircraft parked at an airport tarmac during the day .
+train set restart, 468 batches and 24 left
+Epoch 35 Batch 99, train loss 2.153746
+Epoch 35 Batch 199, train loss 2.197169
+Epoch 35 Batch 299, train loss 2.244069
+Epoch 35 Batch 399, train loss 2.252101
+dev set restart, 156 batches and 8 left
+Epoch 35 of 100 took 47.48707890510559s
+  training loss:                 2.2241919399070333
+  validation loss:               2.9201185310028435
+  validation perplexity:         18.543485307397454
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: Two giraffes standing on the ground from a building and door .
+Example 1: A giraffe at a zoo with a person with a hand .
+Example 2: A small white bird sitting on top of a park bench .
+Example 3: Two buses that are sitting in front of a bus .
+Example 4: A man in a hat and helmet riding a bike on a street with other traffic .
+train set restart, 468 batches and 24 left
+Epoch 36 Batch 99, train loss 2.156912
+Epoch 36 Batch 199, train loss 2.200477
+Epoch 36 Batch 299, train loss 2.219556
+Epoch 36 Batch 399, train loss 2.261993
+dev set restart, 156 batches and 8 left
+Epoch 36 of 100 took 39.549997091293335s
+  training loss:                 2.218135046043884
+  validation loss:               2.9242583264120356
+  validation perplexity:         18.620410660493647
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: Park of building mats and bicycles parked near a wall .
+Example 1: A bathroom with a shower , tiled walls and towels and flowers .
+Example 2: A bird eating candles on the middle of a tree .
+Example 3: Picture of black and adorned cat eating from a pile .
+Example 4: A traffic signal at the bus stop on the street .
+train set restart, 468 batches and 24 left
+Epoch 37 Batch 99, train loss 2.141901
+Epoch 37 Batch 199, train loss 2.188259
+Epoch 37 Batch 299, train loss 2.244555
+Epoch 37 Batch 399, train loss 2.244325
+dev set restart, 156 batches and 8 left
+Epoch 37 of 100 took 41.61452794075012s
+  training loss:                 2.2137504833847728
+  validation loss:               2.924202236189323
+  validation perplexity:         18.61936626680311
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A black and white photo of people , a small , old cows and a giraffe in the middle of the other .
+Example 1: Many cars and cars at an intersection with a red fire hydrant .
+Example 2: A large white passenger jet sitting on to of a tarmac .
+Example 3: A shot of a herd of sheep in a field .
+Example 4: A woman takes a picture of herself in an old photograph .
+train set restart, 468 batches and 24 left
+Epoch 38 Batch 99, train loss 2.120933
+Epoch 38 Batch 199, train loss 2.206226
+Epoch 38 Batch 299, train loss 2.241568
+Epoch 38 Batch 399, train loss 2.226008
+dev set restart, 156 batches and 8 left
+Epoch 38 of 100 took 41.47848320007324s
+  training loss:                 2.209579777361742
+  validation loss:               2.9221088959039494
+  validation perplexity:         18.58043036457336
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A toilet in a dirty bathroom stall with small paper dispenser .
+Example 1: A big hand on a training curbside next to a street .
+Example 2: A woman in black dress sitting on a park bench .
+Example 3: A building with opened doors , stools , and snow covered mountain behind it .
+Example 4: A cat on top of the toilet in a pasture .
+train set restart, 468 batches and 24 left
+Epoch 39 Batch 99, train loss 2.128629
+Epoch 39 Batch 199, train loss 2.181174
+Epoch 39 Batch 299, train loss 2.203075
+Epoch 39 Batch 399, train loss 2.249823
+dev set restart, 156 batches and 8 left
+Epoch 39 of 100 took 42.18553709983826s
+  training loss:                 2.202298287643807
+  validation loss:               2.9127435416793315
+  validation perplexity:         18.407230358212757
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A couple of men as biking in the river near a huge mountain .
+Example 1: Three people riding a motorcycle down the street at a stop light .
+Example 2: A couple of large jetliner sitting on top of an airport runway .
+Example 3: A man kneeling his bike while standing on a bench .
+Example 4: A kite of bench in front of a garden in a grassy field .
+train set restart, 468 batches and 24 left
+Epoch 40 Batch 99, train loss 2.125371
+Epoch 40 Batch 199, train loss 2.172278
+Epoch 40 Batch 299, train loss 2.224572
+Epoch 40 Batch 399, train loss 2.230728
+dev set restart, 156 batches and 8 left
+Epoch 40 of 100 took 43.77104449272156s
+  training loss:                 2.197952896547216
+  validation loss:               2.924958924346605
+  validation perplexity:         18.6334606526082
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: The blue , green and white airplane is parked on a runway .
+Example 1: Man on a dirt bike by a truck on a city street .
+Example 2: A red fire hydrant in green grass with a white woods .
+Example 3: A person holding a green baby on a pole looking for .
+Example 4: The large set of sunlight over the water by a lake .
+train set restart, 468 batches and 24 left
+Epoch 41 Batch 99, train loss 2.129682
+Epoch 41 Batch 199, train loss 2.172769
+Epoch 41 Batch 299, train loss 2.193557
+Epoch 41 Batch 399, train loss 2.238357
+dev set restart, 156 batches and 8 left
+Epoch 41 of 100 took 43.871540546417236s
+  training loss:                 2.1945409131710973
+  validation loss:               2.9323972914020593
+  validation perplexity:         18.77257994117489
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A kitchen with wood cabinets , cabinets , black cabinets , cabinets , and counter .
+Example 1: A bags hanging on a grouping of trash with some items .
+Example 2: Three hot tables one strawberries with fruit and other I .
+Example 3: A fire hydrant in the middle of the woods .
+Example 4: Many police motorcycles and one bus tracks over the road .
+train set restart, 468 batches and 24 left
+Epoch 42 Batch 99, train loss 2.137242
+Epoch 42 Batch 199, train loss 2.167295
+Epoch 42 Batch 299, train loss 2.193870
+Epoch 42 Batch 399, train loss 2.230350
+dev set restart, 156 batches and 8 left
+Epoch 42 of 100 took 42.73490929603577s
+  training loss:                 2.1926855423303047
+  validation loss:               2.9304624697507755
+  validation perplexity:         18.736293462306705
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A kitchen counter with a glass center and a charging on the back of it .
+Example 1: A young man on a motorcycle on display at the end .
+Example 2: A grey - iron hydrant post in an autumn sticker .
+Example 3: A young woman playing a piece of cake on a serving cake .
+Example 4: A view of a snow covered mountain with a mountain in the background .
+train set restart, 468 batches and 24 left
+Epoch 43 Batch 99, train loss 2.103480
+Epoch 43 Batch 199, train loss 2.171096
+Epoch 43 Batch 299, train loss 2.205189
+Epoch 43 Batch 399, train loss 2.237963
+dev set restart, 156 batches and 8 left
+Epoch 43 of 100 took 43.99929451942444s
+  training loss:                 2.1869170536110394
+  validation loss:               2.923203198691492
+  validation perplexity:         18.6007741103938
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: read of a sink , toilet , and shower tub .
+Example 1: A photograph of an image of a woman holding a striped shirt .
+Example 2: A couple of women sitting on a wooden bench in front of a body of water .
+Example 3: A child holding a pizza on top of a laptop .
+Example 4: Two people stand in a room with a tour bus fighting their luggage .
+train set restart, 468 batches and 24 left
+Epoch 44 Batch 99, train loss 2.113052
+Epoch 44 Batch 199, train loss 2.156002
+Epoch 44 Batch 299, train loss 2.199716
+Epoch 44 Batch 399, train loss 2.225799
+dev set restart, 156 batches and 8 left
+Epoch 44 of 100 took 43.24669098854065s
+  training loss:                 2.183627253148093
+  validation loss:               2.9288207564071342
+  validation perplexity:         18.70555907474934
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A woman cutting out over a table of water on a motorcycle .
+Example 1: lights is on the television and only showing the reflection of the moon .
+Example 2: A group of three men with motorcycles and tents in front of a flat area .
+Example 3: Adult building in the distance shining with cars behind it .
+Example 4: A white , propeller black airplane parked in a lot .
+train set restart, 468 batches and 24 left
+Epoch 45 Batch 99, train loss 2.115655
+Epoch 45 Batch 199, train loss 2.140444
+Epoch 45 Batch 299, train loss 2.187766
+Epoch 45 Batch 399, train loss 2.213755
+dev set restart, 156 batches and 8 left
+Epoch 45 of 100 took 42.32264423370361s
+  training loss:                 2.176658441517145
+  validation loss:               2.933180582859312
+  validation perplexity:         18.787290103093376
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: grab adult and baby giraffes on a busy street with trees .
+Example 1: A toilet is shown in the corner of a bathroom .
+Example 2: a dog and a boy sitting on a wooden bench in a park alley .
+Example 3: A girl standing next to a white sink in a bathroom .
+Example 4: A pedestrian lot under a traffic light and street signs .
+train set restart, 468 batches and 24 left
+Epoch 46 Batch 99, train loss 2.117028
+Epoch 46 Batch 199, train loss 2.156644
+Epoch 46 Batch 299, train loss 2.183627
+Epoch 46 Batch 399, train loss 2.205431
+dev set restart, 156 batches and 8 left
+Epoch 46 of 100 took 41.56482219696045s
+  training loss:                 2.175991993214784
+  validation loss:               2.9361317636339828
+  validation perplexity:         18.84281668664614
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A person sitting on a bench and reading a necks of talking .
+Example 1: An pan with some food sitting on teal holder in it .
+Example 2: A fluffy baby standing next to a giraffe near a tree and .
+Example 3: A couple of giraffes standing in an open field between each other .
+Example 4: A small airplane flying against a tree in the air .
+train set restart, 468 batches and 24 left
+Epoch 47 Batch 99, train loss 2.098453
+Epoch 47 Batch 199, train loss 2.150651
+Epoch 47 Batch 299, train loss 2.201816
+Epoch 47 Batch 399, train loss 2.211204
+dev set restart, 156 batches and 8 left
+Epoch 47 of 100 took 43.11545920372009s
+  training loss:                 2.172031237626635
+  validation loss:               2.9420937281865815
+  validation perplexity:         18.95549244247917
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: People sit on a field watching boats at the bus .
+Example 1: A man sitting next to a person on a black motorcycle .
+Example 2: A dog standing next to a person on a motorcycle .
+Example 3: A street at night covered in snow next to lots of buildings .
+Example 4: A bathroom with a mirror , showing a toilet and a flower machine holder use .
+train set restart, 468 batches and 24 left
+Epoch 48 Batch 99, train loss 2.105039
+Epoch 48 Batch 199, train loss 2.130716
+Epoch 48 Batch 299, train loss 2.172576
+Epoch 48 Batch 399, train loss 2.227876
+dev set restart, 156 batches and 8 left
+Epoch 48 of 100 took 42.30132555961609s
+  training loss:                 2.1670770141869973
+  validation loss:               2.9396625744769795
+  validation perplexity:         18.909464699639788
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A black car parked next to a red and blue fire hydrant .
+Example 1: A double decker bus on the tracks side of the street .
+Example 2: Two giraffe standing in a grassy area in a grassy field .
+Example 3: A laptop computer sitting on a blanket near a phone .
+Example 4: A woman sitting on an open bench in front of a church .
+train set restart, 468 batches and 24 left
+Epoch 49 Batch 99, train loss 2.088639
+Epoch 49 Batch 199, train loss 2.138123
+Epoch 49 Batch 299, train loss 2.185012
+Epoch 49 Batch 399, train loss 2.209687
+dev set restart, 156 batches and 8 left
+Epoch 49 of 100 took 42.21782732009888s
+  training loss:                 2.164093632687892
+  validation loss:               2.9336673910341595
+  validation perplexity:         18.796438135986733
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A young man riding walking down an empty street as also others .
+Example 1: A red and yellow passenger jet flying through a blue sky with a space .
+Example 2: A white plane flies in front of a huge plane .
+Example 3: A young boy sitting on a bench in the shade .
+Example 4: A large brick church tower has a clock to displayed .
+train set restart, 468 batches and 24 left
+Epoch 50 Batch 99, train loss 2.081476
+Epoch 50 Batch 199, train loss 2.142653
+Epoch 50 Batch 299, train loss 2.160771
+Epoch 50 Batch 399, train loss 2.204701
+dev set restart, 156 batches and 8 left
+Epoch 50 of 100 took 41.340420722961426s
+  training loss:                 2.1602916547230313
+  validation loss:               2.9433442428598457
+  validation perplexity:         18.97921139127324
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A small kid and dishes in a crowded wheelchair area .
+Example 1: A bathroom with a sink , toilet , and bathtub in it .
+Example 2: A man sitting on top of a stone bench near a river .
+Example 3: A man wearing two shirt and mustache next to a small bathroom .
+Example 4: The under portion of a toilets with a leash next to it .
+train set restart, 468 batches and 24 left
+Epoch 51 Batch 99, train loss 2.087197
+Epoch 51 Batch 199, train loss 2.143371
+Epoch 51 Batch 299, train loss 2.171042
+Epoch 51 Batch 399, train loss 2.191220
+dev set restart, 156 batches and 8 left
+Epoch 51 of 100 took 43.342302322387695s
+  training loss:                 2.158713901983395
+  validation loss:               2.9292333445619234
+  validation perplexity:         18.71327835918545
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: Many people standing in front of an adult black car .
+Example 1: Four vans in the front of a horse ' s road .
+Example 2: This is an image of herself in woman office bench outside of a building .
+Example 3: A giraffe with sheep standing in there ' s mouth .
+Example 4: A traffic light features red and a red pedestrian sign sitting next to building .
+train set restart, 468 batches and 24 left
+Epoch 52 Batch 99, train loss 2.081741
+Epoch 52 Batch 199, train loss 2.127633
+Epoch 52 Batch 299, train loss 2.157330
+Epoch 52 Batch 399, train loss 2.195658
+dev set restart, 156 batches and 8 left
+Epoch 52 of 100 took 42.13726258277893s
+  training loss:                 2.153211323945507
+  validation loss:               2.9339849922216903
+  validation perplexity:         18.80240885516363
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A woman sitting on a bench with a dog carried him .
+Example 1: A view of a white and black tiled bath tub .
+Example 2: The teddy bear can be sticking for a drink ready to shoe .
+Example 3: A man is sitting on a motorcycle parked under a tent .
+Example 4: A brick and clean bathroom with a wooden door .
+train set restart, 468 batches and 24 left
+Epoch 53 Batch 99, train loss 2.095912
+Epoch 53 Batch 199, train loss 2.120560
+Epoch 53 Batch 299, train loss 2.148738
+Epoch 53 Batch 399, train loss 2.185373
+dev set restart, 156 batches and 8 left
+Epoch 53 of 100 took 41.847052574157715s
+  training loss:                 2.1533242370019843
+  validation loss:               2.9343671191412484
+  validation perplexity:         18.80959513468771
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: Two giraffe standing next to a car of people on a wet street .
+Example 1: A towel bottle is left in a plate with a plate .
+Example 2: Sun machine with red shoes strapped in a red keyboard .
+Example 3: A group of various motorcycles parked next to a small building .
+Example 4: A white toilet is in a bathroom with blue tiles .
+train set restart, 468 batches and 24 left
+Epoch 54 Batch 99, train loss 2.056797
+Epoch 54 Batch 199, train loss 2.140751
+Epoch 54 Batch 299, train loss 2.163075
+Epoch 54 Batch 399, train loss 2.200855
+dev set restart, 156 batches and 8 left
+Epoch 54 of 100 took 43.32054686546326s
+  training loss:                 2.1472204623700204
+  validation loss:               2.946755458663358
+  validation perplexity:         19.044064127561164
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A bowl of lettuce and a fruit down a table .
+Example 1: A dirty bathroom with a white toilet and a sink .
+Example 2: A person that is wearing a hat sitting on a bench .
+Example 3: Someone walk through the water off water being seen from birds .
+Example 4: A sky Airlines of street lights with some construction coming picking over .
+train set restart, 468 batches and 24 left
+Epoch 55 Batch 99, train loss 2.073376
+Epoch 55 Batch 199, train loss 2.113599
+Epoch 55 Batch 299, train loss 2.149688
+Epoch 55 Batch 399, train loss 2.195389
+dev set restart, 156 batches and 8 left
+Epoch 55 of 100 took 42.55466294288635s
+  training loss:                 2.143247967335715
+  validation loss:               2.9493526018622678
+  validation perplexity:         19.093588572389702
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A person riding on a motorbike in the street with a lot of people .
+Example 1: The two sheep are standing in the grass in the grass beside the shade .
+Example 2: A blue and white airplane on a runway sill to the train .
+Example 3: A lot of motorcycle riders are lined up in a downtown .
+Example 4: A red bus driving down a street with people on it .
+train set restart, 468 batches and 24 left
+Epoch 56 Batch 99, train loss 2.050275
+Epoch 56 Batch 199, train loss 2.112181
+Epoch 56 Batch 299, train loss 2.162863
+Epoch 56 Batch 399, train loss 2.200260
+dev set restart, 156 batches and 8 left
+Epoch 56 of 100 took 44.193785190582275s
+  training loss:                 2.1434579393756925
+  validation loss:               2.9352351049341783
+  validation perplexity:         18.825928683654134
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A blue stoplight at a intersection with a person crossing the street .
+Example 1: A kitchen that has wooden floors and a large window .
+Example 2: Two men in besides with their backs view two another sitting and one man stands behind a motorcycle .
+Example 3: Three blue and orange airplane sitting on a tarmac under an airport .
+Example 4: A herd of sheep on a lawn next to a small bike .
+train set restart, 468 batches and 24 left
+Epoch 57 Batch 99, train loss 2.066248
+Epoch 57 Batch 199, train loss 2.118380
+Epoch 57 Batch 299, train loss 2.156352
+Epoch 57 Batch 399, train loss 2.179869
+dev set restart, 156 batches and 8 left
+Epoch 57 of 100 took 41.97451710700989s
+  training loss:                 2.140264798074897
+  validation loss:               2.9446176040044354
+  validation perplexity:         19.003394175054865
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: The open space shoot is prepared for a piece for food to cut .
+Example 1: A teddy bear sits on a bench under a tree .
+Example 2: A shower curtain that appears to be file shiny lights .
+Example 3: A living room with couch , chair and television .
+Example 4: A group of children stand near a man wearing face sniffing .
+train set restart, 468 batches and 24 left
+Epoch 58 Batch 99, train loss 2.054707
+Epoch 58 Batch 199, train loss 2.102312
+Epoch 58 Batch 299, train loss 2.168148
+Epoch 58 Batch 399, train loss 2.169504
+dev set restart, 156 batches and 8 left
+Epoch 58 of 100 took 43.503440380096436s
+  training loss:                 2.137590470344527
+  validation loss:               2.940463272155865
+  validation perplexity:         18.9246115273394
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: An older couple man sitting on a motorcycle on a dirt trail .
+Example 1: A man who is standing under an orange cone .
+Example 2: A kitchen with a refrigerator that has several items stools and pans .
+Example 3: A large kitchen with white counters , a sink , and a dishwasher .
+Example 4: People are at an intersection with a array flowing on a power .
+train set restart, 468 batches and 24 left
+Epoch 59 Batch 99, train loss 2.063444
+Epoch 59 Batch 199, train loss 2.115115
+Epoch 59 Batch 299, train loss 2.153241
+Epoch 59 Batch 399, train loss 2.170178
+dev set restart, 156 batches and 8 left
+Epoch 59 of 100 took 44.47465801239014s
+  training loss:                 2.1351978295901692
+  validation loss:               2.947797937894635
+  validation perplexity:         19.063927520681748
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A white and blue bus traveling down the street behind a passenger car .
+Example 1: A dog near a bird standing on palm while playing its nearby .
+Example 2: A blue and white airplane sitting in a loaded boarding .
+Example 3: A man is sitting next to an airplane on the runway .
+Example 4: An overhead view of a passenger plane coming in for a landing .
+train set restart, 468 batches and 24 left
+Epoch 60 Batch 99, train loss 2.053985
+Epoch 60 Batch 199, train loss 2.096428
+Epoch 60 Batch 299, train loss 2.152654
+Epoch 60 Batch 399, train loss 2.179661
+dev set restart, 156 batches and 8 left
+Epoch 60 of 100 took 41.53924822807312s
+  training loss:                 2.130709436402392
+  validation loss:               2.948745656320337
+  validation perplexity:         19.082003320090497
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: Kitchen paint , tail , boy , child on a stone wall .
+Example 1: A white jet airplane in high and yellow and a blue sky .
+Example 2: A rider rides steam stunts gas china in a parade .
+Example 3: A red and white airplane is in the sky taking off .
+Example 4: A woman with a bag sitting next to her lap near the another of the building while on the curb outdoors .
+train set restart, 468 batches and 24 left
+Epoch 61 Batch 99, train loss 2.059552
+Epoch 61 Batch 199, train loss 2.089310
+Epoch 61 Batch 299, train loss 2.143095
+Epoch 61 Batch 399, train loss 2.167684
+dev set restart, 156 batches and 8 left
+Epoch 61 of 100 took 41.82361030578613s
+  training loss:                 2.127792055164573
+  validation loss:               2.9576070024893393
+  validation perplexity:         19.25184696739349
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A man riding on the back of a motorcycle down an air runway .
+Example 1: A little boy is on his head parents by the hair .
+Example 2: A decorated toilet in a skillet is being very dirty .
+Example 3: A man carrying a large surfboard in front of a fire hydrant .
+Example 4: A road sign near a fire hydrant during the flooded with a picture of a construction on the sidewalk .
+train set restart, 468 batches and 24 left
+Epoch 62 Batch 99, train loss 2.046105
+Epoch 62 Batch 199, train loss 2.115588
+Epoch 62 Batch 299, train loss 2.134284
+Epoch 62 Batch 399, train loss 2.157378
+dev set restart, 156 batches and 8 left
+Epoch 62 of 100 took 41.42302179336548s
+  training loss:                 2.1247947249077024
+  validation loss:               2.9525799318425006
+  validation perplexity:         19.155309426428992
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A bus driving down a road next to a bus .
+Example 1: A bus is driving around a building on the street .
+Example 2: A dog in a low looking looking seated on a toilet .
+Example 3: A long row of benches sitting next to each other in a field .
+Example 4: The side of a tour bus , with parked all on the street .
+train set restart, 468 batches and 24 left
+Epoch 63 Batch 99, train loss 2.065720
+Epoch 63 Batch 199, train loss 2.106976
+Epoch 63 Batch 299, train loss 2.123577
+Epoch 63 Batch 399, train loss 2.179318
+dev set restart, 156 batches and 8 left
+Epoch 63 of 100 took 42.97405385971069s
+  training loss:                 2.125785600147776
+  validation loss:               2.9493457370745904
+  validation perplexity:         19.093457499408046
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A woman ridding a kite at the park beside a bright blue sky .
+Example 1: A worn out of people ' s bottom doing a hat .
+Example 2: Three giraffes and one zebra standing in a field .
+Example 3: A man is sitting on a bench by some flowers .
+Example 4: A kid lays on a bench sits in front of a car .
+train set restart, 468 batches and 24 left
+Epoch 64 Batch 99, train loss 2.046506
+Epoch 64 Batch 199, train loss 2.099383
+Epoch 64 Batch 299, train loss 2.139825
+Epoch 64 Batch 399, train loss 2.170531
+dev set restart, 156 batches and 8 left
+Epoch 64 of 100 took 43.24759554862976s
+  training loss:                 2.121554739439665
+  validation loss:               2.949007068548865
+  validation perplexity:         19.08699224115726
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A toilet in a plunger on top of a roll of toilet paper .
+Example 1: A plate with several glasses and fork stump around it .
+Example 2: A parking lot filled with lush scene to a bathroom .
+Example 3: Two giraffes facing snowboards from a distant wall in a pen consisting .
+Example 4: A small airplane sits on display in a park in the wild .
+train set restart, 468 batches and 24 left
+Epoch 65 Batch 99, train loss 2.044175
+Epoch 65 Batch 199, train loss 2.102139
+Epoch 65 Batch 299, train loss 2.133301
+Epoch 65 Batch 399, train loss 2.160444
+dev set restart, 156 batches and 8 left
+Epoch 65 of 100 took 43.00037908554077s
+  training loss:                 2.1171959450504163
+  validation loss:               2.9624826625205127
+  validation perplexity:         19.345941628566067
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A collection of foods ' s ingredients sitting on a counter .
+Example 1: A formation of pilots flying in formation in the sky .
+Example 2: A man and two men looking at something on the street light .
+Example 3: A FedEx - name parked makes dough and flip down and in the background .
+Example 4: A group of people standing next to one another on a motorcycle .
+train set restart, 468 batches and 24 left
+Epoch 66 Batch 99, train loss 2.042851
+Epoch 66 Batch 199, train loss 2.105923
+Epoch 66 Batch 299, train loss 2.137319
+Epoch 66 Batch 399, train loss 2.151915
+dev set restart, 156 batches and 8 left
+Epoch 66 of 100 took 45.276044845581055s
+  training loss:                 2.1176748956952776
+  validation loss:               2.9539981008177083
+  validation perplexity:         19.18249416368738
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: An open kitchen with brown cabinets and a steel stainless refrigerator bar .
+Example 1: A bench made of logs and standing next to a book shelf .
+Example 2: A desk with a laptop , keyboard , and orange keyboard .
+Example 3: The large monitor tower has two fruits on it .
+Example 4: A row of fire hydrant covered in snow and yellow trees .
+train set restart, 468 batches and 24 left
+Epoch 67 Batch 99, train loss 2.046201
+Epoch 67 Batch 199, train loss 2.089293
+Epoch 67 Batch 299, train loss 2.127527
+Epoch 67 Batch 399, train loss 2.157297
+dev set restart, 156 batches and 8 left
+Epoch 67 of 100 took 43.917425870895386s
+  training loss:                 2.115425688117298
+  validation loss:               2.959715141611776
+  validation perplexity:         19.292475349258375
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A tall clock tower over two head and blue sky .
+Example 1: A fire hydrant and a crane - pole in a field .
+Example 2: A bathroom sink sits in a large stall next to a toilet .
+Example 3: Group of three men with men sitting on a bench at a street .
+Example 4: A Zebra oval of a parked jets made , off from the ceiling .
+train set restart, 468 batches and 24 left
+Epoch 68 Batch 99, train loss 2.036651
+Epoch 68 Batch 199, train loss 2.088797
+Epoch 68 Batch 299, train loss 2.122486
+Epoch 68 Batch 399, train loss 2.152230
+dev set restart, 156 batches and 8 left
+Epoch 68 of 100 took 45.13748264312744s
+  training loss:                 2.111529408741607
+  validation loss:               2.960332516392286
+  validation perplexity:         19.304389714428474
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A row of wooden park benches at the end of a path .
+Example 1: A guy in a wetsuit looking at the side of a mirror .
+Example 2: A small group of airplanes sits on the outside of a white runway .
+Example 3: A small airplane is shown above the tops of an airplane .
+Example 4: A group of people standing by a street on a foggy day .
+train set restart, 468 batches and 24 left
+Epoch 69 Batch 99, train loss 2.037426
+Epoch 69 Batch 199, train loss 2.082879
+Epoch 69 Batch 299, train loss 2.144118
+Epoch 69 Batch 399, train loss 2.135680
+dev set restart, 156 batches and 8 left
+Epoch 69 of 100 took 44.22892928123474s
+  training loss:                 2.108349940161715
+  validation loss:               2.951315711624072
+  validation perplexity:         19.131108198026276
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A picture of a passenger jet through the sky on day day .
+Example 1: A toilet bowl is sitting and ready inside of a bath .
+Example 2: A robe and purple glasses with pants sitting in fatigues white .
+Example 3: A small plane is parked by a cloudless tree .
+Example 4: A green fire hydrant in a forest on a sidewalk .
+train set restart, 468 batches and 24 left
+Epoch 70 Batch 99, train loss 2.015155
+Epoch 70 Batch 199, train loss 2.081911
+Epoch 70 Batch 299, train loss 2.127896
+Epoch 70 Batch 399, train loss 2.165127
+dev set restart, 156 batches and 8 left
+Epoch 70 of 100 took 41.62861347198486s
+  training loss:                 2.108547367520932
+  validation loss:               2.9561757034402456
+  validation perplexity:         19.224311527560985
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A woman is standing next to a large hole bed .
+Example 1: A hot plate with an top wooden with a pizza top and carrots .
+Example 2: A person on a motorcycle in the road near a sidewalk and forest .
+Example 3: A bar on a brick city street with an open door .
+Example 4: There delivering a bowl of a food at a table .
+train set restart, 468 batches and 24 left
+Epoch 71 Batch 99, train loss 2.030299
+Epoch 71 Batch 199, train loss 2.081276
+Epoch 71 Batch 299, train loss 2.119890
+Epoch 71 Batch 399, train loss 2.147018
+dev set restart, 156 batches and 8 left
+Epoch 71 of 100 took 42.33098483085632s
+  training loss:                 2.103333191830975
+  validation loss:               2.9619650885509374
+  validation perplexity:         19.335931263537848
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A kitchen set , dining tables and counters on tiled end .
+Example 1: A banana that is sitting on top of a table .
+Example 2: A group of people trying for a Frisbee on a park .
+Example 3: Two large lit shine made signs at an urban street .
+Example 4: A bike peering from a barn behind a house .
+train set restart, 468 batches and 24 left
+Epoch 72 Batch 99, train loss 2.024294
+Epoch 72 Batch 199, train loss 2.083737
+Epoch 72 Batch 299, train loss 2.131827
+Epoch 72 Batch 399, train loss 2.130976
+dev set restart, 156 batches and 8 left
+Epoch 72 of 100 took 41.63428616523743s
+  training loss:                 2.1029602484916574
+  validation loss:               2.9545885406162404
+  validation perplexity:         19.19382361602737
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A women who is holding a girl spread her hand .
+Example 1: A boy and a girl standing at a war crashed get on a skate shelf .
+Example 2: A cat sits on top of a shelf of a kitchen .
+Example 3: A woman walking down a street while carrying a sprinkles dog sitting on a bench .
+Example 4: A building with signage on tables with tall buildings has large windows .
+train set restart, 468 batches and 24 left
+Epoch 73 Batch 99, train loss 2.034158
+Epoch 73 Batch 199, train loss 2.076484
+Epoch 73 Batch 299, train loss 2.110872
+Epoch 73 Batch 399, train loss 2.128885
+dev set restart, 156 batches and 8 left
+Epoch 73 of 100 took 43.18225359916687s
+  training loss:                 2.101259648164452
+  validation loss:               2.9558688770955537
+  validation perplexity:         19.21841390714469
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A herd of sheep with grazing in a pasture in a field .
+Example 1: Small giraffe in an enclosed area looking at the distance .
+Example 2: A long bus sitting on top of an airport building .
+Example 3: Birds planes fly through a line of smoke field into the sky .
+Example 4: A yellow traffic light is on the street by traffic .
+train set restart, 468 batches and 24 left
+Epoch 74 Batch 99, train loss 2.020902
+Epoch 74 Batch 199, train loss 2.087217
+Epoch 74 Batch 299, train loss 2.104460
+Epoch 74 Batch 399, train loss 2.139045
+dev set restart, 156 batches and 8 left
+Epoch 74 of 100 took 43.734436988830566s
+  training loss:                 2.0983459741067785
+  validation loss:               2.9625803963809423
+  validation perplexity:         19.347832474523404
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A very nice looking bathroom that medicine a big sink with giraffes in the center .
+Example 1: A man is watching a giraffe stain a picture .
+Example 2: A baby plays a book pours onto from a bed in a room .
+Example 3: A giraffe and licks stand in a field in the grass .
+Example 4: Two adult giraffe standing next to a building in a city .
+train set restart, 468 batches and 24 left
+Epoch 75 Batch 99, train loss 2.021698
+Epoch 75 Batch 199, train loss 2.072211
+Epoch 75 Batch 299, train loss 2.116509
+Epoch 75 Batch 399, train loss 2.152558
+dev set restart, 156 batches and 8 left
+Epoch 75 of 100 took 41.997153520584106s
+  training loss:                 2.0967013142002164
+  validation loss:               2.956789961679513
+  validation perplexity:         19.236123846846844
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A motorcycle sits on a dirt path near a taxi .
+Example 1: a baby giraffe is in holding shade , looks at a rock .
+Example 2: A full view of a bathroom with a toilet and a garbage can .
+Example 3: A woman and women are smiling in an old city bus .
+Example 4: A young woman sitting on top of a wooden bench .
+train set restart, 468 batches and 24 left
+Epoch 76 Batch 99, train loss 2.013675
+Epoch 76 Batch 199, train loss 2.065872
+Epoch 76 Batch 299, train loss 2.113031
+Epoch 76 Batch 399, train loss 2.130186
+dev set restart, 156 batches and 8 left
+Epoch 76 of 100 took 42.535502433776855s
+  training loss:                 2.094826590277747
+  validation loss:               2.9625270399192556
+  validation perplexity:         19.346800170181556
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A bowl containing cereal and kind is sitting on the kitchen counter .
+Example 1: those umbrellas in a public bathroom that is installed .
+Example 2: A bed that has a spoon in laptop and next to it .
+Example 3: A giraffe tower with its head down and stretching out up toward the ground .
+Example 4: A small jet jet with a blue tail sticking to it ' s back .
+train set restart, 468 batches and 24 left
+Epoch 77 Batch 99, train loss 2.014457
+Epoch 77 Batch 199, train loss 2.071685
+Epoch 77 Batch 299, train loss 2.117045
+Epoch 77 Batch 399, train loss 2.132061
+dev set restart, 156 batches and 8 left
+Epoch 77 of 100 took 42.29571509361267s
+  training loss:                 2.0938023143231486
+  validation loss:               2.9626031108633173
+  validation perplexity:         19.348271955514413
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: Two cute are eating through an a kitchen while pictured .
+Example 1: A group of giraffes standing in the middle of dirt .
+Example 2: A simple kitchen with several pots of counters sinks and a biplane in the center .
+Example 3: A room filled with a microwave , two sinks , a counter , a streetlight and a boy in the tub .
+Example 4: A large jetliner flying high up over the ocean and ocean .
+train set restart, 468 batches and 24 left
+Epoch 78 Batch 99, train loss 2.017149
+Epoch 78 Batch 199, train loss 2.076524
+Epoch 78 Batch 299, train loss 2.102542
+Epoch 78 Batch 399, train loss 2.145725
+dev set restart, 156 batches and 8 left
+Epoch 78 of 100 took 42.67650532722473s
+  training loss:                 2.0934003441572697
+  validation loss:               2.9653302176245564
+  validation perplexity:         19.40110877185603
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A man is taking a picture of the mirror at the camera .
+Example 1: Batter is riding through the streets on the road near another bus of the car .
+Example 2: A bathtub with three level vases sitting next to a blue wall .
+Example 3: A black and white photo of a man walking down the street and parked cars .
+Example 4: A passenger jet parked on a runway in a cloudy day .
+train set restart, 468 batches and 24 left
+Epoch 79 Batch 99, train loss 2.005432
+Epoch 79 Batch 199, train loss 2.071513
+Epoch 79 Batch 299, train loss 2.104952
+Epoch 79 Batch 399, train loss 2.125924
+dev set restart, 156 batches and 8 left
+Epoch 79 of 100 took 43.220908641815186s
+  training loss:                 2.0906916216238223
+  validation loss:               2.9665483830307418
+  validation perplexity:         19.424756932164605
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A grey tour yellow and white yellow tour bus on a street .
+Example 1: An old fashioned plane waiting to take off at an event .
+Example 2: The new bus is parked on the side of the street .
+Example 3: A pair of scissors are waiting for the outdoor table .
+Example 4: This is a roof where a car with a house by it .
+train set restart, 468 batches and 24 left
+Epoch 80 Batch 99, train loss 2.011294
+Epoch 80 Batch 199, train loss 2.058326
+Epoch 80 Batch 299, train loss 2.093427
+Epoch 80 Batch 399, train loss 2.136481
+dev set restart, 156 batches and 8 left
+Epoch 80 of 100 took 42.45657825469971s
+  training loss:                 2.0888887219337513
+  validation loss:               2.968611479278926
+  validation perplexity:         19.46487344319573
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: The motor bike is parked on the side of the street .
+Example 1: A bathroom with a wooden floor counter top that has two skis .
+Example 2: A group of giraffes in the shade by the ketchup .
+Example 3: A man on a motorcycle while a dog walks by .
+Example 4: A cat laying next to a child working on the floor .
+train set restart, 468 batches and 24 left
+Epoch 81 Batch 99, train loss 2.011614
+Epoch 81 Batch 199, train loss 2.070447
+Epoch 81 Batch 299, train loss 2.108729
+Epoch 81 Batch 399, train loss 2.122300
+dev set restart, 156 batches and 8 left
+Epoch 81 of 100 took 44.53127670288086s
+  training loss:                 2.087004827283847
+  validation loss:               2.968496429255586
+  validation perplexity:         19.46263413787032
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A kitchen with a refrigerator , stove , and kitchen .
+Example 1: A pair of giraffes standing on a lush green field .
+Example 2: A white dog with its head on a red drizzled wheel .
+Example 3: Man on a park bench reading between his child giraffe .
+Example 4: A purple factory with a green sign on the side .
+train set restart, 468 batches and 24 left
+Epoch 82 Batch 99, train loss 2.017837
+Epoch 82 Batch 199, train loss 2.071887
+Epoch 82 Batch 299, train loss 2.088626
+Epoch 82 Batch 399, train loss 2.130998
+dev set restart, 156 batches and 8 left
+Epoch 82 of 100 took 43.456528663635254s
+  training loss:                 2.086064022232983
+  validation loss:               2.9631402516873515
+  validation perplexity:         19.35866749394033
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A man in a sweater on a motor cycle driving past a brick building .
+Example 1: A man in a restroom is racer holding a crate .
+Example 2: A man looking at a two wheeled motorcycle on a parking lot .
+Example 3: Five men are at the camera of a ribbon post with light .
+Example 4: An old plane with a pilot standing on a sunny day .
+train set restart, 468 batches and 24 left
+Epoch 83 Batch 99, train loss 2.035256
+Epoch 83 Batch 199, train loss 2.079434
+Epoch 83 Batch 299, train loss 2.060516
+Epoch 83 Batch 399, train loss 2.123505
+dev set restart, 156 batches and 8 left
+Epoch 83 of 100 took 42.91069960594177s
+  training loss:                 2.083081728105606
+  validation loss:               2.965610531300146
+  validation perplexity:         19.40654793026601
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A motorcycle parked next to a lush green forest filled building .
+Example 1: Open propeller tractor airplane near an airport with it ' s landing gear down .
+Example 2: A young woman seated on a bench looking out at a Cat plant .
+Example 3: Man and woman taking a picture in front of a giraffe .
+Example 4: The city bus is parked on the side of the road .
+train set restart, 468 batches and 24 left
+Epoch 84 Batch 99, train loss 1.988288
+Epoch 84 Batch 199, train loss 2.059421
+Epoch 84 Batch 299, train loss 2.094010
+Epoch 84 Batch 399, train loss 2.131505
+dev set restart, 156 batches and 8 left
+Epoch 84 of 100 took 41.64363217353821s
+  training loss:                 2.0803803724012395
+  validation loss:               2.9783900168005837
+  validation perplexity:         19.656145092905515
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A woman holds a pizza in her ' displays soldiers a giraffe .
+Example 1: A white bathroom sitting on a corner with a tub next to it .
+Example 2: A bathroom scene with people walking in front of it .
+Example 3: A group of people standing around their bikes in the street .
+Example 4: A fire hydrant saying is painted like a turn round to a background .
+train set restart, 468 batches and 24 left
+Epoch 85 Batch 99, train loss 2.030410
+Epoch 85 Batch 199, train loss 2.055157
+Epoch 85 Batch 299, train loss 2.081945
+Epoch 85 Batch 399, train loss 2.116385
+dev set restart, 156 batches and 8 left
+Epoch 85 of 100 took 42.620646476745605s
+  training loss:                 2.0790019589446502
+  validation loss:               2.972172430355231
+  validation perplexity:         19.534310462774297
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A bright red fire hydrant in small natural near a tree .
+Example 1: A dog sniffs on the back of a automobile window .
+Example 2: A woman with a black shirt is standing in a box .
+Example 3: Two dogs sitting in front of a small piece of wood door .
+Example 4: A traffic light is mounted near a pole as a tree flies or two is laying with each other at
+train set restart, 468 batches and 24 left
+Epoch 86 Batch 99, train loss 1.994611
+Epoch 86 Batch 199, train loss 2.069043
+Epoch 86 Batch 299, train loss 2.091887
+Epoch 86 Batch 399, train loss 2.116555
+dev set restart, 156 batches and 8 left
+Epoch 86 of 100 took 42.74269485473633s
+  training loss:                 2.078151638065574
+  validation loss:               2.974063085539438
+  validation perplexity:         19.571278043582844
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A man on a small cityscape rides and his motorcycle in front of the fake .
+Example 1: A herd of sheep stand about some grazing in front of some buildings .
+Example 2: A large plane flying low in the sky together next to a beautiful hotel .
+Example 3: Birds are holding up their head out onto the fire hydrant .
+Example 4: A couple of giraffe coming around a trees on a river at a zoo meadow .
+train set restart, 468 batches and 24 left
+Epoch 87 Batch 99, train loss 1.998762
+Epoch 87 Batch 199, train loss 2.058832
+Epoch 87 Batch 299, train loss 2.099253
+Epoch 87 Batch 399, train loss 2.111795
+dev set restart, 156 batches and 8 left
+Epoch 87 of 100 took 42.41752767562866s
+  training loss:                 2.078651890317514
+  validation loss:               2.981008002974182
+  validation perplexity:         19.70767202795692
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A fake white and blue fire hydrant sitting on a sidewalk next to a biplane .
+Example 1: A man that is parked near a pole next to a river .
+Example 2: Two cats are lying in the doorway of a bathtub .
+Example 3: 2 men lying on motorcycles and motorcycles parked in a grassy area .
+Example 4: A motorcycle sitting in front of a storefront with many windows .
+train set restart, 468 batches and 24 left
+Epoch 88 Batch 99, train loss 1.999744
+Epoch 88 Batch 199, train loss 2.065433
+Epoch 88 Batch 299, train loss 2.078307
+Epoch 88 Batch 399, train loss 2.108873
+dev set restart, 156 batches and 8 left
+Epoch 88 of 100 took 43.12174963951111s
+  training loss:                 2.075042014691367
+  validation loss:               2.9776012788136383
+  validation perplexity:         19.64064765710541
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: Two giraffes are beside the ground in among one eating from the other side of the mountains ,
+Example 1: This is a picture of a wet street with a car in the foreground .
+Example 2: the one man is sitting on the bench next to the toilet .
+Example 3: A bicycle leans against a bench in front of a cage .
+Example 4: A busy city street with cars driving down a street lined with cars .
+train set restart, 468 batches and 24 left
+Epoch 89 Batch 99, train loss 1.983318
+Epoch 89 Batch 199, train loss 2.052633
+Epoch 89 Batch 299, train loss 2.083635
+Epoch 89 Batch 399, train loss 2.134476
+dev set restart, 156 batches and 8 left
+Epoch 89 of 100 took 43.11559796333313s
+  training loss:                 2.074331649585065
+  validation loss:               2.9740072565837377
+  validation perplexity:         19.570185430067973
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: There is a crowd of many large giraffes in their pen .
+Example 1: A picture of a bus stop in a parking lot .
+Example 2: Two small giraffes standing next to a each other under a tree .
+Example 3: A white and blue plane in a sky with smoke coming out .
+Example 4: An airfield with a large airplane flying over a cloudy sky .
+train set restart, 468 batches and 24 left
+Epoch 90 Batch 99, train loss 1.995351
+Epoch 90 Batch 199, train loss 2.041670
+Epoch 90 Batch 299, train loss 2.091570
+Epoch 90 Batch 399, train loss 2.124670
+dev set restart, 156 batches and 8 left
+Epoch 90 of 100 took 43.655839681625366s
+  training loss:                 2.0716081090064953
+  validation loss:               2.9782825239858477
+  validation perplexity:         19.65403231209903
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A bathroom with a black stripe on the floor beside a toilet .
+Example 1: A grey fire hydrant placed in the corner of a street .
+Example 2: A small cat is laying on the floor run way a toilet .
+Example 3: An airplane taking off from an airport runway with clouds pouring it .
+Example 4: A person on top of a toilet in an indoor field with a couple of At beside a TV .
+train set restart, 468 batches and 24 left
+Epoch 91 Batch 99, train loss 2.012324
+Epoch 91 Batch 199, train loss 2.046739
+Epoch 91 Batch 299, train loss 2.076488
+Epoch 91 Batch 399, train loss 2.101757
+dev set restart, 156 batches and 8 left
+Epoch 91 of 100 took 42.51554584503174s
+  training loss:                 2.0708825097663572
+  validation loss:               2.972003607401406
+  validation perplexity:         19.531012901140915
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A person lying on a bench with a tall feed hanging his bicycle .
+Example 1: A large group of people standing around a ramp to board an airplane .
+Example 2: A kitchen that has an island in the middle of it .
+Example 3: A bathroom with a toilet , a roll underneath and the other .
+Example 4: Lone of motorcycle riders travel down roadway behind a vehicle .
+train set restart, 468 batches and 24 left
+Epoch 92 Batch 99, train loss 1.978730
+Epoch 92 Batch 199, train loss 2.053519
+Epoch 92 Batch 299, train loss 2.089750
+Epoch 92 Batch 399, train loss 2.104044
+dev set restart, 156 batches and 8 left
+Epoch 92 of 100 took 43.230392932891846s
+  training loss:                 2.071363886790489
+  validation loss:               2.9856477308697658
+  validation perplexity:         19.7993227163356
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: times view of a parking lot filled with busses and cars .
+Example 1: People stand in front of doors outside of a white bus .
+Example 2: Several motorcycles and motorcycle are parked in a parking lot .
+Example 3: Man standing beside an smart cell phone while sitting on a red motorcycle .
+Example 4: A parked car with a motorcycle parked near a sidewalk .
+train set restart, 468 batches and 24 left
+Epoch 93 Batch 99, train loss 2.001439
+Epoch 93 Batch 199, train loss 2.038003
+Epoch 93 Batch 299, train loss 2.075591
+Epoch 93 Batch 399, train loss 2.112737
+dev set restart, 156 batches and 8 left
+Epoch 93 of 100 took 42.668545961380005s
+  training loss:                 2.0677080705984316
+  validation loss:               2.973054617990306
+  validation perplexity:         19.551550993497656
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A small plane is loaded with luggage in the small by the plane .
+Example 1: A giraffe walking from a tree with tall grass in it .
+Example 2: A man ' s are preparing a meal in the kitchen .
+Example 3: A couple of motor scooters sitting on the sidewalk of the sidewalk .
+Example 4: A man and woman that are dressed in a room .
+train set restart, 468 batches and 24 left
+Epoch 94 Batch 99, train loss 1.990430
+Epoch 94 Batch 199, train loss 2.037825
+Epoch 94 Batch 299, train loss 2.093491
+Epoch 94 Batch 399, train loss 2.112019
+dev set restart, 156 batches and 8 left
+Epoch 94 of 100 took 44.12283492088318s
+  training loss:                 2.067941712672268
+  validation loss:               2.9822328447408424
+  validation perplexity:         19.73182559691077
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: The bathroom counter with a toilet top and a magazine on the seat .
+Example 1: An airplane is parked on the runway of the tarmac .
+Example 2: Sheep graze in a grassy enclosure off to the side of a gate .
+Example 3: A kitchen with a tree tree behind it not be distant folded .
+Example 4: Two men sit down at the end of a dock where their items are motor .
+train set restart, 468 batches and 24 left
+Epoch 95 Batch 99, train loss 1.979889
+Epoch 95 Batch 199, train loss 2.047312
+Epoch 95 Batch 299, train loss 2.076196
+Epoch 95 Batch 399, train loss 2.111924
+dev set restart, 156 batches and 8 left
+Epoch 95 of 100 took 43.26258993148804s
+  training loss:                 2.0637366675110513
+  validation loss:               2.9845757527006525
+  validation perplexity:         19.778109646625666
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A car with a silver boat on the side in it has some been farmer ' s side open .
+Example 1: A big goat drawn trails the road while a woman has sold surrounding on it .
+Example 2: A row of motorcycles on a street outside of all buildings .
+Example 3: A large jetliner flies low over a windshield at an airport .
+Example 4: A large red double decker bus on a street corner .
+train set restart, 468 batches and 24 left
+Epoch 96 Batch 99, train loss 1.975960
+Epoch 96 Batch 199, train loss 2.048632
+Epoch 96 Batch 299, train loss 2.081016
+Epoch 96 Batch 399, train loss 2.104099
+dev set restart, 156 batches and 8 left
+Epoch 96 of 100 took 41.519587993621826s
+  training loss:                 2.0638243447997167
+  validation loss:               2.9757512261632635
+  validation perplexity:         19.604345016105306
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A man riding a motorcycle down a road behind a passing of people .
+Example 1: A person riding a racing motorcycle over a winding road .
+Example 2: Two giraffes standing in a dry grass field by trees .
+Example 3: A pole guard sitting next to a metal pole in a room .
+Example 4: A woman on a motor bike riding down a large paved road .
+train set restart, 468 batches and 24 left
+Epoch 97 Batch 99, train loss 1.994107
+Epoch 97 Batch 199, train loss 2.036763
+Epoch 97 Batch 299, train loss 2.069683
+Epoch 97 Batch 399, train loss 2.105704
+dev set restart, 156 batches and 8 left
+Epoch 97 of 100 took 40.01569104194641s
+  training loss:                 2.0619083820883906
+  validation loss:               2.978384222623248
+  validation perplexity:         19.65603120204506
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A toilet with a wooden seat under a metal cage .
+Example 1: A empty wooden park bench on the side of a lake .
+Example 2: A man is hard down the somebody out of the basket .
+Example 3: A man sitting in a chair in front of a volley layer old plane .
+Example 4: A man in a suit and hat sitting on a large hill bench overlooking a planter .
+train set restart, 468 batches and 24 left
+Epoch 98 Batch 99, train loss 1.980700
+Epoch 98 Batch 199, train loss 2.047887
+Epoch 98 Batch 299, train loss 2.066168
+Epoch 98 Batch 399, train loss 2.104297
+dev set restart, 156 batches and 8 left
+Epoch 98 of 100 took 42.79593372344971s
+  training loss:                 2.0611687992681573
+  validation loss:               2.979844832782369
+  validation perplexity:         19.684761978030597
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A traffic light hanging from a wire with a city street .
+Example 1: A giraffes in the zoo looking out from a wooden fence .
+Example 2: A clock tower with a church steeple coming to top side .
+Example 3: A black motorcycle crashed the side of the street while it is sticking an mirrored rain .
+Example 4: A close up of the sun light and she is sitting on chairs .
+train set restart, 468 batches and 24 left
+Epoch 99 Batch 99, train loss 1.982801
+Epoch 99 Batch 199, train loss 2.012248
+Epoch 99 Batch 299, train loss 2.084000
+Epoch 99 Batch 399, train loss 2.119463
+dev set restart, 156 batches and 8 left
+Epoch 99 of 100 took 44.552581548690796s
+  training loss:                 2.059236685096074
+  validation loss:               2.98686791347688
+  validation perplexity:         19.823496250610532
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: An assortment of cheese are displayed on a table with one bit of book cake in it .
+Example 1: A white train at a bus carrying a variety girl .
+Example 2: A herd of sheep graze on a lush green field .
+Example 3: A red car that looks out from inside the traffic light .
+Example 4: This point shaped , saucer , sets , set , a soap , and a cup of flower .
+train set restart, 468 batches and 24 left
+Epoch 100 Batch 99, train loss 1.963315
+Epoch 100 Batch 199, train loss 2.037688
+Epoch 100 Batch 299, train loss 2.085628
+Epoch 100 Batch 399, train loss 2.096848
+dev set restart, 156 batches and 8 left
+Epoch 100 of 100 took 43.858572006225586s
+  training loss:                 2.0570769442169907
+  validation loss:               2.98137098057064
+  validation perplexity:         19.714826769808354
+  best epoch:                    24
+  best validation perplexity:    18.11730503648123
+Example 0: A dog is riding his food standing in the dirt .
+Example 1: A close up of a red and white fire hydrant .
+Example 2: A toilet with built belly is standing next to a sink in a bathroom .
+Example 3: A group of people riding bikes along a cop on a dirt road in front of trees .
+Example 4: A brightly colored double decker bus is stopped up near a train .

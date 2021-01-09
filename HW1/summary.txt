@@ -1,0 +1,260 @@
+########################
+# Additional Files
+########################
+# readme.md
+
+########################
+# Filled Code
+########################
+# ..\codes\loss.py:1
+        return 0.5 * (np.square(target - input)).mean(axis=0).sum()
+
+# ..\codes\loss.py:2
+        return (input - target) / len(input)
+
+# ..\codes\loss.py:3
+        input -= np.max(input)
+        exp_input = np.exp(input)
+        self._saved_tensor = exp_input / (np.sum(exp_input, axis=1, keepdims=True) + 1e-20)
+        return np.mean(np.sum(-target * np.log(self._saved_tensor + 1e-20), axis=1))
+
+# ..\codes\loss.py:4
+        return (self._saved_tensor - target) / len(input)
+
+# ..\codes\loss.py:5
+        N, K = input.shape
+        self._saved_target_mask = target > 0
+        target_prob = np.resize(input[self._saved_target_mask].repeat(input.shape[1], axis=0), (N, K))
+        temp = self.threshold - target_prob + input
+        self._saved_input_update_mask = (temp > 0) & (~self._saved_target_mask)
+        return np.sum(temp[self._saved_input_update_mask]) / N
+
+# ..\codes\loss.py:6
+        back = np.zeros_like(input)
+        delta = 1. / len(input)
+        back[self._saved_target_mask] -= np.sum(self._saved_input_update_mask, axis=1) * delta
+        back[self._saved_input_update_mask] += delta
+        return back
+
+# ..\codes\layers.py:1
+        self._saved_for_backward(input)
+        return np.maximum(0, input)
+
+# ..\codes\layers.py:2
+        return grad_output * (self._saved_tensor > 0)
+
+# ..\codes\layers.py:3
+        self._saved_for_backward(1. / (1. + np.exp(-input)))
+        return self._saved_tensor
+
+# ..\codes\layers.py:4
+        return grad_output * self._saved_tensor * (1. - self._saved_tensor)
+
+# ..\codes\layers.py:5
+        self._saved_input = input
+        self._saved_for_backward(np.tanh(self.factor * (input + self.alpha * np.power(input, 3))))
+        return 0.5 * input * (1. + self._saved_tensor)
+
+# ..\codes\layers.py:6
+        input = self._saved_input
+        saved = self._saved_tensor
+        return grad_output * 0.5 * ((1. + saved) + input * (
+                self.factor * (1.0 - np.square(saved)) * (1.0 + self.backward_alpha * np.square(input))
+            ))
+
+# ..\codes\layers.py:7
+        self._saved_for_backward(input)
+        return input.dot(self.W) + self.b
+
+# ..\codes\layers.py:8
+        self.grad_W = self._saved_tensor.T.dot(grad_output)
+        self.grad_b = grad_output.sum(axis=0)
+        return grad_output.dot(self.W.T)
+
+
+########################
+# References
+########################
+
+########################
+# Other Modifications
+########################
+# _codes\loss.py -> ..\codes\loss.py
+# 25 +         self._saved_tensor = 1e-20
+# 46 +         self.threshold = threshold
+# 47 +         self._saved_target_mask = None
+# 48 +         self._saved_input_update_mask = None
+# 54 -
+# _codes\network.py -> ..\codes\network.py
+# 15 -
+# _codes\run_mlp.py -> ..\codes\run_mlp.py
+# 3 - from layers import Relu, Sigmoid, Linear, Gelu
+# 3 + from layers import Relu, Sigmoid, Linear, Gelu, Softmax, Tanh
+# 3 ?                                               +++++++++++++++
+# 8 + import os
+# 9 + import time
+# 10 + import numpy as np
+# 11 + from argparse import ArgumentParser
+# 12 +
+# 13 + # Your model defintion here
+# 14 + # You should explore different model architecture
+# 15 +
+# 16 +
+# 17 + def one_layer_mlp(loss='enclidean', activation='relu'):
+# 18 +     model = Network()
+# 19 +     model.add(Linear('fc1', 784, 360, 0.01))
+# 20 +     model.add(activation_map[activation]('activation1'))
+# 21 +     model.add(Linear('fc2', 360, 10, 0.01))
+# 22 +     loss = loss_map[loss](name=loss)
+# 23 +     return model, loss
+# 24 +
+# 25 +
+# 26 + def two_layer_mlp(loss='enclidean', activation='relu'):
+# 27 +     model = Network()
+# 28 +     model.add(Linear('fc1', 784, 512, 0.01))
+# 29 +     model.add(activation_map[activation]('activation1'))
+# 30 +     model.add(Linear('fc2', 512, 256, 0.01))
+# 31 +     model.add(activation_map[activation]('activation2'))
+# 32 +     model.add(Linear('fc3', 256, 10, 0.01))
+# 33 +     loss = loss_map[loss](name=loss)
+# 34 +     return model, loss
+# 35 +
+# 36 +
+# 37 + parser = ArgumentParser()
+# 38 + parser.add_argument('--activ', type=str, default='relu', choices=['relu', 'sigmoid', 'gelu', 'tanh'], help='activation function, default=relu')
+# 39 + parser.add_argument('--loss', type=str, default='cross_entropy', choices=['cross_entropy', 'enclidean', 'hinge'], help='loss function, default=cross_entropy')
+# 40 + parser.add_argument('--nlayer', type=int, default=1, choices=[1, 2], help='layers of mlp, default=1')
+# 41 + parser.add_argument('--lr', type=float, default=0.01, help='learning rate, default=0.01')
+# 42 + parser.add_argument('--wd', type=float, default=0.001, help='weight decay, default=0.001')
+# 43 + parser.add_argument('--mo', type=float, default=0.9, help='momentum, default=0.9')
+# 44 + parser.add_argument('--bsz', type=int, default=200, help='batch size, default=200')
+# 45 + opt = parser.parse_args()
+# 46 + print(opt)
+# 47 +
+# 48 + save_dir = str(opt.nlayer) + 'layer_' + opt.activ + '_' + opt.loss + '_' + str(opt.lr) + '_' + str(opt.wd) + '_' + str(opt.mo)
+# 49 + os.makedirs(save_dir, exist_ok=True)
+# 50 + save_dir += '/'
+# 54 + loss_map = {'enclidean': EuclideanLoss, 'cross_entropy': SoftmaxCrossEntropyLoss, 'hinge': HingeLoss}
+# 55 + activation_map = {'relu': Relu, 'sigmoid': Sigmoid, 'gelu': Gelu, 'tanh': Tanh}
+# 11 - # Your model defintion here
+# 12 - # You should explore different model architecture
+# 13 - model = Network()
+# 14 - model.add(Linear('fc1', 784, 10, 0.01))
+# 16 - loss = EuclideanLoss(name='loss')
+# 57 + if opt.nlayer == 1:
+# 58 +     model, loss = one_layer_mlp(loss=opt.loss, activation=opt.activ)
+# 59 + else:
+# 60 +     model, loss = two_layer_mlp(loss=opt.loss, activation=opt.activ)
+# 23 -
+# 25 -     'learning_rate': 0.0,
+# 25 ?                      ^ ^
+# 68 +     'learning_rate': opt.lr,
+# 68 ?                      ^^^ ^^
+# 26 -     'weight_decay': 0.0,
+# 26 ?                     ^ ^
+# 69 +     'weight_decay': opt.wd,
+# 69 ?                     ^^^ ^^
+# 27 -     'momentum': 0.0,
+# 27 ?                   ^
+# 70 +     'momentum': 0.9,
+# 70 ?                   ^
+# 28 -     'batch_size': 100,
+# 28 ?                   ^^^
+# 71 +     'batch_size': opt.bsz,
+# 71 ?                   ^^^^^^^
+# 31 -     'test_epoch': 5
+# 31 ?                   ^
+# 74 +     'test_epoch': 1
+# 74 ?                   ^
+# 78 + train_loss = []
+# 79 + train_acc = []
+# 80 + valid_loss = []
+# 81 + valid_acc = []
+# 82 +
+# 83 + begin_time = time.time()
+# 36 -     LOG_INFO('Training @ %d epoch...' % (epoch))
+# 37 -     train_net(model, loss, config, train_data, train_label, config['batch_size'], config['disp_freq'])
+# 38 -
+# 41 -         test_net(model, loss, test_data, test_label, config['batch_size'])
+# 87 +         losses, acc = test_net(model, loss, test_data, test_label, config['batch_size'])
+# 87 ?        ++++++++++++++
+# 88 +         valid_loss.append(losses)
+# 89 +         valid_acc.append(acc)
+# 90 +
+# 91 +     LOG_INFO('Training @ %d epoch...' % (epoch))
+# 92 +     losses, acc = train_net(model, loss, config, train_data, train_label, config['batch_size'], config['disp_freq'])
+# 93 +     train_loss.extend(losses)
+# 94 +     train_acc.extend(acc)
+# 95 +
+# 96 + duration = time.time() - begin_time
+# 97 + with open(save_dir + 'info.log', 'w', encoding='utf-8') as f:
+# 98 +     f.write("Time elasped: " + str(duration) + " s\n")
+# 99 +     f.write('Best Train Loss: ' + str(min(train_loss)) + '\n')
+# 100 +     f.write('Best Train Acc: ' + str(max(train_acc)) + '\n')
+# 101 +     f.write('Best Test Loss: ' + str(min(valid_loss)) + '\n')
+# 102 +     f.write('Best Test Acc: ' + str(max(valid_acc)) + '\n')
+# 103 +
+# 104 + train_loss = np.array(train_loss)
+# 105 + np.save(save_dir + 'train_loss.npy', train_loss)
+# 106 + train_acc = np.array(train_acc)
+# 107 + np.save(save_dir + 'train_acc.npy', train_acc)
+# 108 + valid_loss = np.array(valid_loss)
+# 109 + np.save(save_dir + 'valid_loss.npy', valid_loss)
+# 110 + valid_acc = np.array(valid_acc)
+# 111 + np.save(save_dir + 'valid_acc.npy', valid_acc)
+# _codes\solve_net.py -> ..\codes\solve_net.py
+# 16 -
+# 19 +     loss_log = []
+# 20 +     acc_log = []
+# 43 +             avg_loss, avg_acc = np.mean(loss_list), np.mean(acc_list)
+# 44 +             loss_log.append(avg_loss)
+# 45 +             acc_log.append(avg_acc)
+# 42 -             msg = '  Training iter %d, batch loss %.4f, batch acc %.4f' % (iter_counter, np.mean(loss_list), np.mean(acc_list))
+# 42 ?                                                                                          ----- ^^    ------  ----- ^^   ------
+# 46 +             msg = '  Training iter %d, batch loss %.4f, batch acc %.4f' % (iter_counter, avg_loss, avg_acc)
+# 46 ?                                                                                           ^^^       ^^^
+# 50 +     return loss_log, acc_log
+# 65 +     avg_loss, avg_acc = np.mean(loss_list), np.mean(acc_list)
+# 60 -     msg = '    Testing, total mean loss %.5f, total acc %.5f' % (np.mean(loss_list), np.mean(acc_list))
+# 60 ?                                                                  ----- ^^    ------  ----- ^^   ------
+# 66 +     msg = '    Testing, total mean loss %.5f, total acc %.5f' % (avg_loss, avg_acc)
+# 66 ?                                                                   ^^^       ^^^
+# 68 +     return avg_loss, avg_acc
+# _codes\layers.py -> ..\codes\layers.py
+# 25 +
+# 26 + class Tanh(Layer):
+# 27 +     def __init__(self, name):
+# 28 +         super(Tanh, self).__init__(name)
+# 29 +
+# 30 +     def forward(self, input):
+# 31 +         exp_input = np.exp(input)
+# 32 +         exp_input_reciprocal = 1. / exp_input
+# 33 +         self._saved_for_backward((exp_input - exp_input_reciprocal) / (exp_input + exp_input_reciprocal))
+# 34 +         return self._saved_tensor
+# 35 +
+# 36 +     def backward(self, grad_output):
+# 37 +         return grad_output * (1.0 - np.square(self._saved_tensor))
+# 38 +
+# 39 +
+# 40 + class Softmax(Layer):
+# 41 +     def __init__(self, name):
+# 42 +         super(Softmax, self).__init__(name)
+# 43 +
+# 44 +     def forward(self, input):
+# 45 +         input -= np.max(input)
+# 46 +         exp_input = np.exp(input)
+# 47 +         self._saved_for_backward(exp_input / (np.sum(exp_input, axis=1, keepdims=True) + 1e-20))
+# 48 +         return self._saved_tensor
+# 49 +
+# 50 +     def backward(self, grad_output):
+# 51 +         return self._saved_tensor * (1. - self._saved_tensor) * grad_output
+# 52 +
+# 53 +
+# 70 +
+# 88 +
+# 93 +         self._saved_input = None
+# 94 +         self.factor = np.sqrt(2 / np.pi)
+# 95 +         self.alpha = 0.044715
+# 96 +         self.backward_alpha = self.alpha * 3
+# 115 +
+

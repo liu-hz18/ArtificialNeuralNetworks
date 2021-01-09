@@ -1,0 +1,4 @@
+Loading model from ./train/run_rnn_random_l=1_t=1_p=1/checkpoint_run_best.pth.tar
+test set restart, 156 batches and 8 left
+        test_set, perplexity 17.62, forward BLEU 0.309, backward BLEU 0.319, harmonic BLEU 0.314
+        test_set, write inference results to output.txt

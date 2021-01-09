@@ -1,0 +1,138 @@
+########################
+# Additional Files
+########################
+# train
+# run.py
+# requirements.txt
+# readme.md
+# output.txt
+
+########################
+# Filled Code
+########################
+# ..\codes\model.py:1
+        cell_map = {
+            'rnn': RNNCell,
+            'lstm': LSTMCell,
+            'gru': GRUCell,
+        }
+        if cell in cell_map:
+            self.cells = nn.Sequential(\
+                cell_map[cell](num_embed_units, num_units),
+                *[cell_map[cell](num_units, num_units) for _ in range(num_layers - 1)]
+            )
+        else:
+            raise NotImplementedError(f"cell {cell} is not supported.")
+        self.num_layers = num_layers
+
+# ..\codes\model.py:2
+        embedding = F.embedding(sent[:, :-1], self.wordvec)
+        embedding = F.dropout(embedding, p=0.2, training=self.training)
+        # shape: (batch_size, length, num_embed_units)
+
+# ..\codes\model.py:3
+        logits = torch.stack(logits_per_step, dim=2)
+        loss = F.cross_entropy(logits, sent[:, 1:], ignore_index=0)
+
+# ..\codes\model.py:4
+            embedding = F.embedding(now_token, self.wordvec)
+            embedding = F.dropout(embedding, p=0.2, training=self.training)
+            # shape: (batch_size, num_embed_units)
+
+# ..\codes\model.py:5
+                # shape: (batch_size, num_vocabs)
+                prob = (logits / temperature).softmax(dim=-1)
+                sort_probs, _ = torch.sort(prob, dim=-1, descending=False)
+                sum_sort_probs = torch.cumsum(sort_probs, dim=-1)
+                min_probs, _ = torch.max(torch.where(sum_sort_probs < (1.0 - max_probability), sort_probs, torch.zeros_like(sort_probs)), dim=-1, keepdim=True)
+                new_prob = torch.where(prob >= min_probs, prob, torch.zeros_like(prob))
+                new_prob /= new_prob.sum(-1, keepdim=True)
+                now_token = torch.multinomial(new_prob, 1)[:, 0]  # shape: (batch_size)
+                # shape: (batch_size)
+
+# ..\codes\rnn_cell.py:1
+        self.input_layer = nn.Linear(input_size, hidden_size*3)
+        self.hidden_layer = nn.Linear(hidden_size, hidden_size*3, bias=False)
+
+# ..\codes\rnn_cell.py:2
+        return torch.zeros(batch_size, self.hidden_size, device=device)
+
+# ..\codes\rnn_cell.py:3
+        r1, r2, r3 = self.input_layer(incoming).chunk(3, dim=-1)
+        z1, z2, z3 = self.hidden_layer(state).chunk(3, dim=-1)
+        r = torch.sigmoid(r1 + z1)
+        z = torch.sigmoid(r2 + z2)
+        n = torch.tanh(r3 + r * z3)
+        output = (1 - z) * n + z * state
+        new_state = output
+
+# ..\codes\rnn_cell.py:4
+        self.input_layer = nn.Linear(input_size, hidden_size*4)
+        self.hidden_layer = nn.Linear(hidden_size, hidden_size*4, bias=False)
+
+# ..\codes\rnn_cell.py:5
+        return (
+            torch.zeros(batch_size, self.hidden_size, device=device),
+            torch.zeros(batch_size, self.hidden_size, device=device)
+        )
+
+# ..\codes\rnn_cell.py:6
+        h, c = state
+        i1, i2, i3, i4 = self.input_layer(incoming).chunk(4, dim=-1)
+        h1, h2, h3, h4 = self.hidden_layer(h).chunk(4, dim=-1)
+        i = torch.sigmoid(i1 + h1)
+        f = torch.sigmoid(i2 + h2)
+        g = torch.tanh(i3 + h3)
+        o = torch.sigmoid(i4 + h4)
+        new_c = f * c + i * g
+        new_h = o * torch.tanh(new_c)
+        output = new_h
+
+
+########################
+# References
+########################
+
+########################
+# Other Modifications
+########################
+# _codes\main.py -> ..\codes\main.py
+# 28 + parser.add_argument('--cell', type=str, default='gru', choices=["rnn", "gru", "lstm"],
+# 29 +     help='Type of RNN Cell. Default: gru')
+# 49 +
+# 50 + from tensorboardX import SummaryWriter
+# 51 + save_dir = f'{args.train_dir}/{args.name}_{args.cell}_{args.decode_strategy}_l={args.layers}_t={args.temperature}_p={args.max_probability}'
+# 52 + if not args.test:
+# 53 +     writer = SummaryWriter(save_dir)
+# 128 +             args.cell,
+# 126 -         optimizer = optim.Adam(model.parameters(), lr=args.learning_rate, weight_decay=0)
+# 134 +         optimizer = optim.Adam(model.parameters(), lr=args.learning_rate, weight_decay=0.0001)
+# 134 ?                                                                                         +++++
+# 151 -                 with open(os.path.join(args.train_dir, 'checkpoint_%s.pth.tar' % args.name), 'wb') as fout:
+# 151 ?                                         ^^^^^^^^^
+# 159 +                 with open(os.path.join(save_dir, 'checkpoint_%s_best.pth.tar' % args.name), 'wb') as fout:
+# 159 ?                                        + ^^                    +++++
+# 172 +             writer.add_scalar("train_loss", train_loss, global_step=epoch)
+# 173 +             writer.add_scalar("valid_loss", val_loss, global_step=epoch)
+# 174 +             writer.add_scalar("valid_ppl", val_ppl, global_step=epoch)
+# 175 +
+# 168 -         model_path = os.path.join(args.train_dir, 'checkpoint_%s.pth.tar' % args.test)
+# 168 ?                                    ^^^^^^^^^
+# 180 +         model_path = os.path.join(save_dir, 'checkpoint_%s_best.pth.tar' % args.test)
+# 180 ?                                   + ^^                    +++++
+# 177 -         with open('output.txt', 'w') as fout:
+# 189 +         with open(os.path.join(save_dir, 'output.txt'), 'w') as fout:
+# 189 ?                   +++++++++++++++++++++++            +
+# _codes\model.py -> ..\codes\model.py
+# 13 +             cell,             # type of RNN Cell
+# 14 -             wordvec,            # pretrained wordvec matrix
+# 14 ?                     --
+# 15 +             wordvec,          # pretrained wordvec matrix
+# 80 +                 if j < self.num_layers-1:
+# 81 +                     hidden = F.dropout(hidden, 0.5, training=self.training)
+# 68 -             logits = self.linear(hidden) # shape: (batch_size, num_vocabs)
+# 82 +             logits = self.linear(hidden)  # shape: (batch_size, num_vocabs)
+# 82 ?                                          +
+# 115 +                 if j < self.num_layers-1:
+# 116 +                     hidden = F.dropout(hidden, 0.5, training=self.training)
+

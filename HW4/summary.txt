@@ -1,0 +1,229 @@
+########################
+# Additional Files
+########################
+# readme.md
+
+########################
+# Filled Code
+########################
+# ..\codes\VAE\VAE.py:1
+        self.encoder = nn.Sequential(
+            nn.Conv2d(in_channels=num_channals, out_channels=16, kernel_size=3, stride=1, padding=1), # out: 16 x 32 x 32
+            nn.ReLU(),
+            nn.Conv2d(in_channels=16, out_channels=32, kernel_size=3, stride=2, padding=1),  # out: 32 x 16 x 16
+            nn.ReLU(),
+            nn.Conv2d(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1), # out: 32 x 16 x 16
+            nn.ReLU(),
+            nn.Conv2d(in_channels=32, out_channels=16, kernel_size=3, stride=2, padding=1), # out: 16 x 8 x 8
+            nn.ReLU(),
+            nn.Flatten(start_dim=1, end_dim=-1), # 16*8*8 = 1024
+            nn.Linear(16*8*8, 2*latent_dim),
+            nn.ReLU(),
+            nn.Linear(2*latent_dim, 2*latent_dim),
+        )
+        self.decoder = nn.Sequential(
+            nn.Linear(latent_dim, latent_dim),
+            nn.ReLU(),
+            nn.Linear(latent_dim, 16*8*8),
+            Reshape(16, 8, 8),
+            nn.ConvTranspose2d(in_channels=16, out_channels=32, kernel_size=3, stride=2, padding=1, output_padding=1),
+            nn.ReLU(),
+            nn.ConvTranspose2d(in_channels=32, out_channels=32, kernel_size=3, stride=1, padding=1, output_padding=0),
+            nn.ReLU(),
+            nn.ConvTranspose2d(in_channels=32, out_channels=16, kernel_size=3, stride=2, padding=1, output_padding=1),
+            nn.ReLU(),
+            nn.ConvTranspose2d(in_channels=16, out_channels=1, kernel_size=3, stride=1, padding=1, output_padding=0),
+            nn.Sigmoid(),
+        )
+
+# ..\codes\VAE\VAE.py:2
+        std = (log_var * 0.5).exp()
+        eps = torch.randn(mu.size(0), mu.size(1)).to(std.device)
+        sampled_z = eps * std + mu
+
+# ..\codes\VAE\VAE.py:3
+            mu, log_var = self.encoder(x).chunk(2, dim=-1)
+            sampled_z = self.reparameterize(mu, log_var)
+            recon_x = self.decoder(sampled_z)
+
+# ..\codes\VAE\VAE.py:4
+            gen_x = self.decoder(z)
+
+# ..\codes\VAE\trainer.py:1
+        bsz = target.size(0)
+        recon_loss = F.binary_cross_entropy(recon, target, reduction='sum') / bsz
+        kl_loss = (mu.pow(2) + log_var.exp() - log_var - 1).sum() * 0.5 / bsz
+
+# ..\codes\GAN\GAN.py:1
+        # no bias to get better performance!
+            nn.ConvTranspose2d(in_channels=latent_dim, out_channels=4*hidden_dim, kernel_size=4, stride=1, padding=0, bias=False),
+            nn.BatchNorm2d(4*hidden_dim),
+            nn.ReLU(),
+            nn.ConvTranspose2d(in_channels=4*hidden_dim, out_channels=2*hidden_dim, kernel_size=4, stride=2, padding=1, bias=False),
+            nn.BatchNorm2d(2*hidden_dim),
+            nn.ReLU(),
+            nn.ConvTranspose2d(in_channels=2*hidden_dim, out_channels=hidden_dim, kernel_size=4, stride=2, padding=1, bias=False),
+            nn.BatchNorm2d(hidden_dim),
+            nn.ReLU(),
+            nn.ConvTranspose2d(in_channels=hidden_dim, out_channels=1, kernel_size=4, stride=2, padding=1, bias=False),
+            nn.Tanh(),
+
+# ..\codes\GAN\trainer.py:1
+        b_size = real_imgs.size(0)
+        label = torch.full((b_size,), 1.0, dtype=torch.float, device=self._device)
+        output = self._netD(real_imgs).view(-1)
+        loss_D_real = BCE_criterion(output, label)
+        D_x = output.mean().item()
+        loss_D_real.backward()
+
+# ..\codes\GAN\trainer.py:2
+        label.fill_(0.0)
+        output = self._netD(fake_imgs.detach()).view(-1)
+        loss_D_fake = BCE_criterion(output, label)
+        D_G_z1 = output.mean().item()
+        loss_D_fake.backward()
+
+# ..\codes\GAN\trainer.py:3
+        label.fill_(1.0)
+        output = self._netD(fake_imgs).view(-1)
+        loss_G = BCE_criterion(output, label)
+        D_G_z2 = output.mean().item()
+
+
+########################
+# References
+########################
+
+########################
+# Other Modifications
+########################
+# _codes\VAE\VAE.py -> ..\codes\VAE\VAE.py
+# 4 +
+# 5 + class Reshape(nn.Module):
+# 6 +     def __init__(self, *args):
+# 7 +         super(Reshape, self).__init__()
+# 8 +         self.shape = args
+# 9 +
+# 10 +     def forward(self, x):
+# 11 +         return x.view((x.size(0),) + self.shape)
+# _codes\VAE\main.py -> ..\codes\VAE\main.py
+# 10 + import numpy as np
+# 11 + from pytorch_fid import fid_score
+# 11 - from pytorch_fid import fid_score
+# 13 + def interpolate(model, sqrt_K=10, c_min=-0.5, c_max=1.5, path='./interpolate.pdf', noises=[]):
+# 14 +     import matplotlib.pyplot as plt
+# 15 +     from torchvision.utils import make_grid
+# 16 +     if len(noises) == 4:
+# 17 +         noise_a, noise_b, noise_c, noise_d = noises[0], noises[1], noises[2], noises[3]
+# 18 +     else:
+# 19 +         noise_a = torch.randn(1, model.latent_dim).to(device)
+# 20 +         noise_b = torch.randn(1, model.latent_dim).to(device)
+# 21 +         noise_c = torch.randn(1, model.latent_dim).to(device)
+# 22 +         noise_d = torch.randn(1, model.latent_dim).to(device)
+# 23 +     row, col = sqrt_K, sqrt_K
+# 24 +     delta_x = (c_max - c_min) / row
+# 25 +     delta_y = (c_max - c_min) / col
+# 26 +     plt.tight_layout()
+# 27 +     model.eval()
+# 28 +     with torch.no_grad():
+# 29 +         for i in range(row):
+# 30 +             noise_x = noise_a + (delta_x * i + c_min) * (noise_b - noise_a)
+# 31 +             noise_y = noise_d + (delta_x * i + c_min) * (noise_c - noise_d)
+# 32 +             for j in range(col):
+# 33 +                 index = i * col + j
+# 34 +                 noise = noise_x + (delta_y * j + c_min) * (noise_y - noise_x)
+# 35 +                 imgs = model.forward(z=noise).squeeze()
+# 36 +                 plt.subplot(row, col, index+1)
+# 37 +                 plt.axis('off')
+# 38 +                 plt.xticks([])
+# 39 +                 plt.yticks([])
+# 40 +                 plt.imshow(imgs.cpu().numpy(), cmap='gray')
+# 41 +     plt.savefig(path)
+# 17 -     parser.add_argument('--latent_dim', default=64, type=int)
+# 17 ?                                                 ^^
+# 47 +     parser.add_argument('--latent_dim', default=100, type=int)
+# 47 ?                                                 ^^^
+# 60 -             imgs = model.forward(z=torch.randn(args.batch_size, model.latent_dim))
+# 90 +             imgs = model.forward(z=torch.randn(args.batch_size, model.latent_dim).to(device))
+# 90 ?                                                                                  +++++++++++
+# 101 +
+# 102 +     imgs = next(real_dl)[0][0:4].to(device)
+# 103 +     noise = torch.randn(4, args.latent_dim).to(device)
+# 104 +     mu, log_var = model.encoder(imgs).chunk(2, dim=-1)
+# 105 +     sampled_z = model.reparameterize(mu, log_var).unsqueeze(1)
+# 106 +     interpolate(model, sqrt_K=14, noises=sampled_z)
+# _codes\VAE\trainer.py -> ..\codes\VAE\trainer.py
+# 46 -         fixed_noise = torch.randn(32, self._model.latent_dim)
+# 48 +         fixed_noise = torch.randn(32, self._model.latent_dim).to(self._device)
+# 48 ?                                                              +++++++++++++++++
+# _codes\VAE\dataset.py -> ..\codes\VAE\dataset.py
+# 39 -             num_workers=2,
+# 39 ?                         ^
+# 39 +             num_workers=0,
+# 39 ?                         ^
+# 41 -             pin_memory=True
+# 41 ?                        ^^^
+# 41 +             pin_memory=False
+# 41 ?                        ^^^^
+# 47 -             num_workers=2,
+# 47 ?                         ^
+# 47 +             num_workers=0,
+# 47 ?                         ^
+# 49 -             pin_memory=True
+# 49 ?                        ^^^
+# 49 +             pin_memory=False
+# 49 ?                        ^^^^
+# _codes\GAN\main.py -> ..\codes\GAN\main.py
+# 12 +
+# 13 + def interpolate(model, sqrt_K=8, c_min=-1.0, c_max=2.0, path='./interpolate.pdf'):
+# 14 +     import matplotlib.pyplot as plt
+# 15 +     from torchvision.utils import make_grid
+# 16 +     noise_a = torch.randn(1, model.latent_dim, 1, 1).to(device)
+# 17 +     noise_b = torch.randn(1, model.latent_dim, 1, 1).to(device)
+# 18 +     noise_c = torch.randn(1, model.latent_dim, 1, 1).to(device)
+# 19 +     noise_d = torch.randn(1, model.latent_dim, 1, 1).to(device)
+# 20 +     row, col = sqrt_K, sqrt_K
+# 21 +     delta_x = (c_max - c_min) / row
+# 22 +     delta_y = (c_max - c_min) / col
+# 23 +     plt.tight_layout()
+# 24 +     model.eval()
+# 25 +     with torch.no_grad():
+# 26 +         for i in range(row):
+# 27 +             noise_x = noise_a + (delta_x * i + c_min) * (noise_b - noise_a)
+# 28 +             noise_y = noise_d + (delta_x * i + c_min) * (noise_c - noise_d)
+# 29 +             for j in range(col):
+# 30 +                 index = i * col + j
+# 31 +                 noise = noise_x + (delta_y * j + c_min) * (noise_y - noise_x)
+# 32 +                 imgs = model.forward(z=noise).squeeze()
+# 33 +                 plt.subplot(row, col, index+1)
+# 34 +                 plt.axis('off')
+# 35 +                 plt.xticks([])
+# 36 +                 plt.yticks([])
+# 37 +                 plt.imshow(imgs.cpu().numpy(), cmap='gray')
+# 38 +     plt.savefig(path)
+# 74 -     print("FID score: {:.3f}".format(fid), flush=True)
+# 101 +     print("FID score: {:.3f}".format(fid), flush=True)
+# 101 ?                                                       +
+# 102 +
+# 103 +     interpolate(netG, sqrt_K=14)
+# _codes\GAN\trainer.py -> ..\codes\GAN\trainer.py
+# 70 -
+# 75 +
+# _codes\GAN\dataset.py -> ..\codes\GAN\dataset.py
+# 39 -             num_workers=2,
+# 39 ?                         ^
+# 39 +             num_workers=0,
+# 39 ?                         ^
+# 41 -             pin_memory=True
+# 41 ?                        ^^^
+# 41 +             pin_memory=False
+# 41 ?                        ^^^^
+# 47 -             num_workers=2,
+# 47 ?                         ^
+# 47 +             num_workers=0,
+# 47 ?                         ^
+# 49 -             pin_memory=True
+# 49 ?                        ^^^
+# 49 +             pin_memory=False
+# 49 ?                        ^^^^
+
